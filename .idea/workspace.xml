@@ -2,8 +2,746 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6598193a-c415-43fd-a1f7-19ac52287cf6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/fonts/icomoon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/fonts/icomoon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/images/bicai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/images/cc-close-crude.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/images/emptydata.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/images/network.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/less/ziti.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/EllipsisText/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/HttpErrorDialog/icon_status_error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/NewsItem/icon-time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/NewsItem/icon-yan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/assets/images/empty-data.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/coupon-btn-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/dhruledetail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/dialog-cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/main-bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/rule-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/share-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/assets/images/zhang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/assets/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/assets/images/msg-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/assets/images/newuser2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/assets/images/olduser2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/assets/images/title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/QQ@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/aiqiyi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/dhruledetail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/dialog-cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/download@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/imgShare-saoyisao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/leftyezi@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/liwu-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/liwu-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/mianduimainsao@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/morentx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/msg-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/newuser2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/olduser2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/outSide-gbbg@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/pengyouquan@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/redlaba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/rightyezi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/saoma-3@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/share-duanxin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/share-shaoma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/step-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/step-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/step-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/step-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/titile2yezi@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/title-bj-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/title-bj-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/title-bj-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/title-bj-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/wechat@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/weixin@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/assets/images/zuorenwu2@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/demo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/turnplate-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/turnplate-pointer-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/turnplate-pointer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/top-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/top-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/top-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/arc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/box-b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/box-i.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/box-o.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/btns-bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/dialog-cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/fudai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/jb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/jz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/lingquan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/loading.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/main-title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/min-title-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/min-title-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/ren-l.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/ren-r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/rule-btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/share-btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/shareIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/swiper-bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/table.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/text.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/touzi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/assets/images/xin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/botbj.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/btn1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/btn2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ddfgl_a@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ddfgl_b@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ddfgl_c@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ddfgl_d@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/huikan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/jianbian.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ptjs_a@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/ptjs_b@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/topbj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/xsfljs_a@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/xsfljs_b@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/xsfljs_c@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/main/xsfljs_d@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/public/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/public/jiantou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/bl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/bw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/fang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/guang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/ka-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/ka.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/nf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/nfs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/qc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/qy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/qyt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/rw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/scene-bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/td.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/tddg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/text.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/text1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/xk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/xy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/yhg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/yp-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/yp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/ys-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/ys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/yw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/yzwj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/zp-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/zp-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-1/zp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/canchedengguang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/chihe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/dengguang1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/dengguang2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/duanzan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/gebotouying.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/jiubeishou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/jiupingshou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/pijiu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/pijiupei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/pijiuyeti.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/rensheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/shuihoushouru.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/xinlige.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/zenxi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-2/zuoshou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/baolei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/botren.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/chaoren.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/del.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/dengyan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/feicai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/gantan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/geduan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/jusang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/pingmu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/qiuzhu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/shouru.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/text.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/text1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/text2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/text3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/topbj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/topren.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/xianxi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-3/zhiqu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/bicai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/botcafei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/botnan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/botnv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/bottable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/cafeiqi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/gebo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/jianzhu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/nan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/nandunpan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/nv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/nvkuijia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/shoubizhezhao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/text1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-4/text2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-5/bj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-5/phone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-5/table.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-5/tipphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/images/scene-5/tipphpne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/assets/images/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/assets/images/msg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/assets/images/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/assets/images/up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/NewsItem/icon-time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/NewsItem/icon-yan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/assets/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/assets/images/icon-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/assets/images/icon-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/assets/images/icon-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/assets/images/jb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/cc-close-crude.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/$.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/beginImg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/drawImg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/getRedPacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/msg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/redPacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/rule.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/successImg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/assets/images/up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Calendar/topic-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/cc-close-crude.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/EllipsisText/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/MainTitle/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/MainTitle/title-bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/BG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/GAOTXT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/JUAN.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/SUIJI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/YUAN.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/ZUI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/bicai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/loginBG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/assets/images/rule.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Calendar/topic-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/cc-close-crude.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/EllipsisText/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/MainTitle/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/MainTitle/title-bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/assets/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env.dev" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env.development" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env.production" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env.productionTest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/Read Me.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/demo-files/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/demo-files/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/fonts/icomoon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/fonts/icomoon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/selection.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/icomoon/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/less/animate.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/less/common.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-assets/less/lazyload.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_default.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_disabled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_global.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_plain.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_primary.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-btn_warn.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-button.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Button/less/weui-loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Confirm/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Confirm/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Confirm/iosAlertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/EllipsisText/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/EmptyData/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/HttpErrorDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/HttpErrorDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/HttpErrorDialog/style.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Loading/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Loading/loading.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/MaskBox/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Popup/dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Popup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Popup/passive_supported.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Popup/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/ScrollFixedEnd/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/ThrowNewPage/NETWORK_ERROR_PAGE.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/ThrowNewPage/component.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/ThrowNewPage/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Toast/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-components/Toast/toast.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/appEventCallBack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/bcBridge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/bootstrap copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/bus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/directives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/downloadApp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/fastclick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/filters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/flexible.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/formChecker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/h5PrdDetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/h5RealNameAuth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/loading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/modalHelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/px2rem.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/toast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/transfromAliyunUrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-h5/libs/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-http/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-plugins/preload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-plugins/vue-lazyload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/finsuit-store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/activityCenter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/activityCenter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/ActivityItem/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Grid/border-1px.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Grid/grid-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Grid/grid.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Grid/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/NewsItem/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Swiper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Swiper/swiper-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Swiper/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/components/Swiper/swiper.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/utils/toLinkType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/detail/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/detail/loading.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/list/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/main/loading.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityCenter/view/main/modules/banner.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/activityHistory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/activityHistory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/components/Loadmore/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/components/OrderItem/index copy.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/components/OrderItem/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/json/activityStatus.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/json/orderStatus.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/json/unit.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/utils/apiDataTransfrom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/utils/js-storage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/utils/vue-infinite-scroll/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/utils/vue-infinite-scroll/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/modules/footer.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/modules/rewardAwait.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/modules/rewardFail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/modules/rewardSuccess.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/detail/modules/template.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/main/modules/activityList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/main/modules/main copy.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/activityHistory/view/main/modules/main.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/Root.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/collectCoupon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/collectCoupon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CommonDialog/Children/LotteryMoney.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CommonDialog/Children/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CommonDialog/DialogCommonBox.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/CouponItem/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/components/SharePopup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/view/activityRule/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/view/main/modules/banner.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/view/main/modules/couponList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/collectCoupon/view/main/modules/footer.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cube/cube.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cube/views/Home.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/components/TimerBtn/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/cuncunle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/cuncunle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/view/main/modules/msgScroll.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/view/newUser/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/view/oldUser/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/cuncunle/view/uidHelp/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/Children/Coupon.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/Children/EmotionalHint.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/Children/MembershipCard.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/Children/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/DialogCommonBox.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/ModuleBox/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/StatusBox/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Swiper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Swiper/swiper-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Swiper/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Swiper/swiper.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/TimerBtn/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/awardRotate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/drawRouletteWheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/zepto.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/components/Turnplate/可配置版本.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/llz.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/llz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/store/mian/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/utils/createShareImage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/utils/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/activeRule/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/banner.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/footer.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/footerBar.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/inviteUserCount.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/inviteUserList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/lotteryGema.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/msgScroll.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/rewardCount.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/rewardInnerDetail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/rewardOuterDetail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/sharePopup.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/topListItem.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/topListView-1.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/main/modules/topList/topListView-2.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/moneyStrategy/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/mpmscanInvite/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/myPrize/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/newUser/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/oldUser/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/outSide/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/outSide/modules/msgScroll.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/scanInvite/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/scanInvite/modules/msgScroll.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/llz/view/screenshot/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/Children/LotteryMoney.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/Children/LotteryMoneyFail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/Children/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/DialogCommonBox.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/components/SharePopup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/config/assets.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/mainvenue.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/mainvenue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/imgLoad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/jstimeline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/jstween.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/localStore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/mixins.scene-1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/mixins.scene-2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/mixins.stage-obj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/utils/preload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/view/main/modules/downloadApp.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/view/main/modules/main.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenue/view/main/modules/swiper.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/assets/css/scene.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/Children/LotteryMoney.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/Children/LotteryMoneyFail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/Children/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/DialogCommonBox.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/components/SharePopup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/config/assets.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/mainvenueh5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/mainvenueh5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/utils/getCommonStyle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/utils/jstimeline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/utils/jstween.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/utils/localStore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/utils/touchEvent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/ddf/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-1.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-2.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-3.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-4.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-5.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/main/modules/scene-6.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/nay/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainvenueh5/view/nps/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/DownApp/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Loadmore/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/NewsItem/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Swiper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Swiper/swiper-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Swiper/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Swiper/swiper.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/components/Textarea/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/news.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/news.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/utils/js-storage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/utils/vue-infinite-scroll/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/utils/vue-infinite-scroll/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/comment/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/modules/article.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/modules/comment.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/modules/footerBar.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/modules/products.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/detail/modules/sharePopup.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/iframe/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/main/modules/banner.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/news/view/main/modules/newsList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/Dialog-Lottery.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/Dialog-LotteryImg.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/Dialog-Rule.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/FinsuitConfirm/alertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/FinsuitConfirm/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/FinsuitConfirm/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/MinButton/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/Swiper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/Swiper/swiper-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/Swiper/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/Swiper/swiper.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/components/TaskTemplate/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/oneTask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/oneTask.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/utils/commonGetRewardApi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/banner.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/taskList/authTask.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/taskList/bankTask.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/taskList/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/taskList/investTask.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/oneTask/view/main/modules/taskList/shareTask.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Banner/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_default.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_disabled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_global.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_plain.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_primary.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-btn_warn.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-button.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Button/less/weui-loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Calendar/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Checker/checker-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Checker/checker.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Checker/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/Dialog-Lottery.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/Dialog-LotteryImg.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/Dialog-RedPacket.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/Dialog-Rule.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Confirm/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Confirm/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Confirm/iosAlertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/ConfirmFinsuit/alertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/ConfirmFinsuit/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/ConfirmFinsuit/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/EllipsisText/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Loading/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Loading/loading.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/MainTitle/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/MaskBox/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Popup/dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Popup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Popup/passive_supported.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Popup/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Toast/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/components/Toast/toast.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/pincai.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/pincai.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/utils/createShareImage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/depositResults/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/depositResults/modules/goodsUp.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/depositResults/modules/market.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/depositResults/modules/sharePopup.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/depositResults/modules/step.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/pincai/view/rule/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Banner/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_default.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_disabled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_global.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_plain.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_primary.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-btn_warn.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-button.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Button/less/weui-loading.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Calendar/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Checker/checker-item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Checker/checker.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Checker/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/Dialog-Lottery.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/Dialog-LotteryImg.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/Dialog-RedPacket.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/Dialog-Rule.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/Dialog.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/CommonDialog/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Confirm/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Confirm/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Confirm/iosAlertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/ConfirmFinsuit/alertview.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/ConfirmFinsuit/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/ConfirmFinsuit/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/EllipsisText/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Loading/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Loading/loading.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/MainTitle/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/MaskBox/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Popup/dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Popup/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Popup/passive_supported.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Popup/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Toast/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/components/Toast/toast.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/redPacketFission.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/redPacketFission.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/utils/localStore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/login/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/main/modules/Luck.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/main/modules/list.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/rule/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/redPacketFission/view/shareIndex/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/apis/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/apis/track-events-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/components/HelloWorld.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/config/config.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/router/routerController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/view/main/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/view/main/modules/module-1.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/view/main/modules/module-2.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/view/main/modules/projectNav.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/template/views/About.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.dev.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.development.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.loader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.production.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.productionTest.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpackConfig/vue.utils.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/src/pages/cube/cube.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/pages/cube/App.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/logo.png" afterPath="$PROJECT_DIR$/src/pages/cube/assets/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterPath="$PROJECT_DIR$/src/pages/cube/components/HelloWorld.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/pages/template/template.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/pages/cube/router/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/pages/cube/store/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/views/About.vue" afterPath="$PROJECT_DIR$/src/pages/cube/views/About.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/views/Home.vue" afterPath="$PROJECT_DIR$/src/pages/template/views/Home.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,18 +754,138 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="vue.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="27">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="bus.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/finsuit-h5/libs/bus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/llz/apis/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.loader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpackConfig/vue.loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.utils.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpackConfig/vue.utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+              <folding>
+                <element signature="e#185#1175#0" expanded="false" />
+                <element signature="e#1233#2070#0" expanded="false" />
+                <element signature="e#2133#2483#0" expanded="false" />
+                <element signature="e#2540#2692#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.productionTest.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpackConfig/vue.productionTest.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <folding>
+                <element signature="e#1161#1757#0" expanded="false" />
+                <element signature="e#1289#1716#0" expanded="false" />
+                <element signature="e#1787#2418#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/template/views/Home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/template/components/HelloWorld.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="About.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/template/views/About.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.dev.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpackConfig/vue.dev.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="e#1150#1746#0" expanded="false" />
+                <element signature="e#1278#1705#0" expanded="false" />
+                <element signature="e#1776#2407#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>url-loader</find>
+      <find>pages</find>
+      <find>production</find>
+      <find>htmlPluginPath</find>
+      <find>getOutPut</find>
+      <find>currBuildPackEntry</find>
+      <find>currBuildPackName</find>
+      <find>util</find>
+      <find>path</find>
+      <find>currHtmlPluginPath</find>
+      <find>cooked</find>
+      <find>configureWebpack</find>
+      <find>getAlias</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,16 +894,45 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/pages/template/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/src/pages/template/views/Home.vue" />
+        <option value="$PROJECT_DIR$/src/pages/cube/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/src/pages/template/template.html" />
+        <option value="$PROJECT_DIR$/src/pages/cube/cube.html" />
+        <option value="$PROJECT_DIR$/vue.build.js" />
+        <option value="$PROJECT_DIR$/.env.test" />
+        <option value="$PROJECT_DIR$/.env.prod" />
+        <option value="$PROJECT_DIR$/vue.development.config.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.production.config.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.productionTest.config.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.development.config.js" />
+        <option value="$PROJECT_DIR$/.env.dev" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue-loader.js" />
+        <option value="$PROJECT_DIR$/vue.config.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.dev.config.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.loader.js" />
+        <option value="$PROJECT_DIR$/webpackConfig/vue.utils.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -74,8 +961,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,6 +975,17 @@
               <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vue-js-pop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-js-pop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
+              <item name="webpackConfig" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -95,10 +993,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="last_opened_file_path" value="D:/bicai/yacai-h5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webpack-vue\vue-js-pop\src\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\webpack-vue\vue-js-pop\src\pages" />
+      <recent name="D:\webpack-vue\vue-js-pop\src" />
+      <recent name="D:\webpack-vue\vue-js-pop\webpackConfig" />
+      <recent name="D:\webpack-vue\vue-js-pop" />
+      <recent name="D:\webpack-vue\vue-js-pop\template" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -122,12 +1035,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575365803610</updated>
-      <workItem from="1575365805295" duration="1628000" />
+      <workItem from="1575365805295" duration="2454000" />
+      <workItem from="1575425514633" duration="31385000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1575367472587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575367472590</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1628000" />
+    <option name="totallyTimeSpent" value="33839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -135,19 +1057,19 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6079078" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49093905" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -157,16 +1079,449 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/About.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/About.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/views/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+            <element signature="e#130#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/cube.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cube/cube.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/cube/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="220" lean-forward="true" selection-start-line="0" selection-start-column="210" selection-end-line="0" selection-end-column="220" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="211" lean-forward="false" selection-start-line="0" selection-start-column="211" selection-end-line="0" selection-end-column="211" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/cube/js/about.4259384e.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.production">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.productionTest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.production.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/vue.productionTest.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.productionTest.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.development1.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.development">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <marker date="1575459277661" expanded="true" signature="477:849" ph="{&quot;@vue/cli-plugin-babel&quot;: &quot;^4.1.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.development.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="93" />
+          <folding>
+            <element signature="e#1344#1975#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.production.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="e#1285#1712#0" expanded="false" />
+            <element signature="e#1783#2414#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/views/About.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/views/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/template/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/finsuit-h5/libs/bus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/llz/apis/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.dev.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#1150#1746#0" expanded="false" />
+            <element signature="e#1278#1705#0" expanded="false" />
+            <element signature="e#1776#2407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.productionTest.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#1161#1757#0" expanded="false" />
+            <element signature="e#1289#1716#0" expanded="false" />
+            <element signature="e#1787#2418#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackConfig/vue.utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+          <folding>
+            <element signature="e#185#1175#0" expanded="false" />
+            <element signature="e#1233#2070#0" expanded="false" />
+            <element signature="e#2133#2483#0" expanded="false" />
+            <element signature="e#2540#2692#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
