@@ -1,7 +1,7 @@
 let path = require('path')
 let util = require('./vue.utils.js')
+const resolve = dir => path.join(__dirname, dir);
 //配置pages多页面获取当前文件夹下的html和js
-console.log(process.env.NODE_ENV)
 
 let cooked = JSON.parse(process.env.npm_config_argv).cooked;
 cooked = cooked.slice(2);
@@ -14,36 +14,39 @@ console.log(`您正在启动${process.env.NODE_ENV}环境,启动的项目包括[
 //配置end
 
 module.exports = {
-    lintOnSave: false, //禁用eslint
-    // baseUrl:process.env.NODE_ENV === "production"?'https://www.mycdn.com/':'/',
-    productionSourceMap: false, // 关闭之后不仅能加快生产环境的打包速度，也能避免源码暴露在浏览器端：
     pages,
     devServer: {
+        overlay: { // 让浏览器 overlay 同时显示警告和错误
+            warnings: true
+        },
         index: path.join('/', `${util.getDevPackName(cooked)}.html`), // 启动所有默认打开template.html
-        open: true,
+        open: true, // 是否打开浏览器
         host: '0.0.0.0',
         port: 8088,
         https: false,
-        hotOnly: false,
+        hotOnly: true,// 热更新
         proxy: {
-            '/xrf/': {
-                target: 'http://reg.tool.hexun.com/',
-                changeOrigin: true,
+            "/api": {
+                target:
+                    "https://www.easy-mock.com/mock/5bc75b55dc36971c160cad1b/sheets", // 目标代理接口地址
+                secure: false,
+                changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
+                // ws: true, // 是否启用websockets
                 pathRewrite: {
-                    '^/xrf': ''
-                }
-            },
-            '/wa/': {
-                target: 'http://api.match.hexun.com/',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/wa': ''
+                    "^/api": "/"
                 }
             }
         }, // 设置代理
         before: app => {}
     },
     chainWebpack: config => {
+        // config.resolve.alias
+        //     .set("vue$", "vue/dist/vue.esm.js")
+        //     .set("@", resolve("src"))
+        //     .set("@src", resolve("src"))
+        //     .set("@assets", resolve("src/assets"))
+        //     .set("@css", resolve("src/assets/css"))
+        //     .set("@common", resolve("src/common"));
         config.module
             .rule('images')
             .use('url-loader')

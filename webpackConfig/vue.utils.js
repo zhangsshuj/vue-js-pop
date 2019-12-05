@@ -1,6 +1,6 @@
 let glob = require('glob')
 let path = require('path')
-const PAGE_PATH = path.resolve(__dirname, './src/pages')
+const PAGE_PATH = path.resolve(__dirname, '../src/pages')
 const util = {
     // dev 启动入口配置
     getEntry: function (globPath,cooked) {
@@ -48,7 +48,7 @@ const util = {
                 template: 'src/' + tmp[0] + '/' + tmp[1] + '/' + tmp[1] + '.html', // 模板来源
                 filename: 'index.html', // 在 dist/index.html 的输出
                 // 在这个页面中包含的块，默认情况下会包含,提取出来的通用 chunk 和 vendor chunk。
-                chunks: ['chunk-vendors', 'chunk-common', 'index']
+                // chunks: ['chunk-vendors', 'chunk-common', 'index']
             };
         });
         return entries;
@@ -81,8 +81,6 @@ const util = {
             const dirname = dirPath.substring(dirPath.lastIndexOf('/') + 1);
             alias["@" + dirname] = path.join(__dirname, '..', "src/pages/" + dirname)
         })
-        console.log('alis')
-        console.log(alias)
         return alias;
     }
 }

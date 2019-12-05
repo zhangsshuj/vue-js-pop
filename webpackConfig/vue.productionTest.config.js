@@ -1,5 +1,7 @@
-let path = require('path')
 let util = require('./vue.utils.js')
+let path = require('path')
+const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.NODE_ENV);
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
 //配置pages多页面获取当前文件夹下的html和js
 console.log(process.env.NODE_ENV)
 let pages = {}
@@ -23,37 +25,25 @@ console.log("当前包——服务器发布目录：", publicPath);
 //配置end
 
 module.exports = {
-    publicPath: './', // 官方要求修改路径在这里做更改，默认是根目录下，可以自行配置
     outputDir: 'dist/productionTest/'+ currBuildPackName, //标识是打包哪个文件
-    lintOnSave: false, //禁用eslint
-    // baseUrl:process.env.NODE_ENV === "production"?'https://www.mycdn.com/':'/',
-    productionSourceMap: false, // 关闭之后不仅能加快生产环境的打包速度，也能避免源码暴露在浏览器端：
     pages,
-    devServer: {
-        open: true,
-        host: '0.0.0.0',
-        port: 8088,
-        https: false,
-        hotOnly: false,
-        proxy: {
-            '/xrf/': {
-                target: 'http://reg.tool.hexun.com/',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/xrf': ''
-                }
-            },
-            '/wa/': {
-                target: 'http://api.match.hexun.com/',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/wa': ''
-                }
-            }
-        }, // 设置代理
-        before: app => {}
-    },
     chainWebpack: config => {
+        // 打包分析
+        if (IS_PROD) {
+            config.plugin("webpack-report").use(BundleAnalyzerPlugin, [
+                {
+                    analyzerMode: "static"
+                }
+            ]);
+        }
+        const cdn = { // 防止将某些 import 的包(package)打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖
+            js: [
+                "//finsuit.bicai365.com/fhc/vue/2.6.10/vue.min.js", // 访问https://unpkg.com/vue/dist/vue.min.js获取最新版本
+                "//finsuit.bicai365.com/fhc/vue-router/3.1.2/vue-router.min.js",
+                "//finsuit.bicai365.com/fhc/vuex/3.1.1/vuex.min.js",
+                "//finsuit.bicai365.com/fhc/axios/0.18.1/axios.min.js"
+            ]
+        }
         config.module
             .rule('images')
             .use('url-loader')

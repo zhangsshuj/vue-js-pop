@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    我是cube
+    我是cube112
   </div>
 </template>
 
@@ -9,12 +9,21 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+      console.log(23123)
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .hello{
+    font-size: px2rem(140px);
+    height: 200px;
+    background: url("../assets/logo.png");
+    background-repeat: no-repeat;
+  }
 h3 {
   margin: 40px 0 0;
 }
