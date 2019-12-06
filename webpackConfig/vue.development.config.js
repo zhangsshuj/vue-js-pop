@@ -1,5 +1,6 @@
 let path = require('path')
 let util = require('./vue.utils.js')
+let alis = util.getAlias()
 const resolve = dir => path.join(__dirname, dir);
 //配置pages多页面获取当前文件夹下的html和js
 
@@ -40,13 +41,17 @@ module.exports = {
         before: app => {}
     },
     chainWebpack: config => {
-        // config.resolve.alias
-        //     .set("vue$", "vue/dist/vue.esm.js")
-        //     .set("@", resolve("src"))
-        //     .set("@src", resolve("src"))
-        //     .set("@assets", resolve("src/assets"))
-        //     .set("@css", resolve("src/assets/css"))
-        //     .set("@common", resolve("src/common"));
+        config.resolve.alias
+            .set("vue$", "vue/dist/vue.esm.js")
+            .set("@", resolve(`../src`))
+            .set("@src", resolve(`../src`))
+            .set("@assets", resolve(`../src/assets`))
+            .set("@css", resolve(`../src/assets/css`))
+            .set("@common", resolve(`../src/common`));
+        for(key in alis) {
+            config.resolve.alias
+                .set(key, alis[key])
+        }
         config.module
             .rule('images')
             .use('url-loader')

@@ -81,6 +81,7 @@ const util = {
             const dirname = dirPath.substring(dirPath.lastIndexOf('/') + 1);
             alias["@" + dirname] = path.join(__dirname, '..', "src/pages/" + dirname)
         })
+        console.log(alias)
         return alias;
     }
 }

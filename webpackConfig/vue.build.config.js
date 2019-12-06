@@ -1,11 +1,13 @@
 let util = require('./vue.utils.js')
 let path = require('path')
+let alis = util.getAlias()
 const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.NODE_ENV);
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
+const resolve = dir => path.join(__dirname, dir);
 //配置pages多页面获取当前文件夹下的html和js
 console.log(process.env.NODE_ENV)
-let pages = {}
-let currBuildPackName = ''
+let pages = {};
+let currBuildPackName = ""
 
 const entries = util.getOutPut('./src/pages/**?/*.js');
 currBuildPackName = JSON.parse(process.env.npm_config_argv).remain[0];
@@ -23,12 +25,22 @@ console.log("当前包——入口html：", currHtmlPluginPath);
 const publicPath = `./`;
 console.log("当前包——服务器发布目录：", publicPath);
 //配置end
-
+console.log(util.getAlias());
 module.exports = {
-    outputDir: 'dist/production/'+ currBuildPackName, //标识是打包哪个文件
-    // baseUrl:process.env.NODE_ENV === "production"?'https://www.mycdn.com/':'/',
     pages,
+    outputDir: `dist/${process.env.NODE_ENV}/${currBuildPackName}`, //标识是打包哪个文件
     chainWebpack: config => {
+        config.resolve.alias
+            .set("vue$", "vue/dist/vue.esm.js")
+            .set("@", resolve(`../src`))
+            .set("@src", resolve(`../src`))
+            .set("@assets", resolve(`../src/assets`))
+            .set("@css", resolve(`../src/assets/css`))
+            .set("@common", resolve(`../src/common`));
+        for(key in alis) {
+            config.resolve.alias
+                .set(key, alis[key])
+        }
         // 打包分析
         if (IS_PROD) {
             config.plugin("webpack-report").use(BundleAnalyzerPlugin, [
@@ -36,14 +48,6 @@ module.exports = {
                     analyzerMode: "static"
                 }
             ]);
-        }
-        const cdn = { // 防止将某些 import 的包(package)打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖
-            js: [
-                "//finsuit.bicai365.com/fhc/vue/2.6.10/vue.min.js", // 访问https://unpkg.com/vue/dist/vue.min.js获取最新版本
-                "//finsuit.bicai365.com/fhc/vue-router/3.1.2/vue-router.min.js",
-                "//finsuit.bicai365.com/fhc/vuex/3.1.1/vuex.min.js",
-                "//finsuit.bicai365.com/fhc/axios/0.18.1/axios.min.js"
-            ]
         }
         config.module
             .rule('images')

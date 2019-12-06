@@ -1,5 +1,3 @@
-let utils = require('./vue.utils.js')
-let path = require('path')
 const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.NODE_ENV);
 const CompressionWebpackPlugin = require("compression-webpack-plugin"); //开启 gzip 压缩
 const productionGzipExtensions = /\.(js|css|json|txt|html|ico|svg)(\?.*)?$/i; //开启 gzip 压缩
@@ -35,23 +33,13 @@ module.exports = {
                     minRatio: 0.8
                 })
             );
-            // config.externals = { // 防止将某些 import 的包(package)打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖
-            //     'vue': 'Vue',
-            //     'vue-router': 'VueRouter',
-            //     'vuex': 'Vuex',
-            //     'axios': 'axios'
-            // };
         }
-        config.plugins = [...config.plugins, ...pluginsConfig];
-        // resolve: {
-        //     alias: {
-        //         'vue$': 'vue/dist/vue.esm.js',
-        //         '@': '@/',
-        //         '@src': '@/',
-        //         '@common': '@/common',
-        //         '@css': '@/assets/css'
-        //         // ...utils.getAlias()
-        //     }
-        // }
+        config.externals = { // 防止将某些 import 的包(package)打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖
+            'vue': 'Vue',
+            'vue-router': 'VueRouter',
+            'vuex': 'Vuex',
+            'axios': 'axios'
+        };
+        config.plugins = [...config.plugins, ...pluginsConfig]
     }
 }

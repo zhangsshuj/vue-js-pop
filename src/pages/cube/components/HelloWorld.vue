@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    我是cube112
+    我是cube112qwe
   </div>
 </template>
 
@@ -12,6 +12,9 @@ export default {
   },
   mounted() {
       console.log(23123)
+      console.log('qwe')
+      console.log('asdad')
+      console.log('aasd')
   }
 }
 </script>
