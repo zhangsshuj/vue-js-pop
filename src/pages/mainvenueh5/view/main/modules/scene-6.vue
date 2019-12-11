@@ -6,7 +6,7 @@
       <img @click="playBackFn" class="huikan" :src="$assets.mainhuikan">
     </div>
     <div class="bj middle" :style="{backgroundImage:`url(${$assets.mainjianbian})`}">
-      <div class="btn btn1" @click="goUrl('nps')">新人福利介绍</div>
+      <div class="btn btn1" @click="$checkLogin({action:goUrl,data:'nps'})">新人福利介绍</div>
       <div class="btn btn2" @click="goUrl('nay')">拼团介绍</div>
       <div class="btn btn3" @click="goUrl('ddf')">单单返活动介绍</div>
     </div>

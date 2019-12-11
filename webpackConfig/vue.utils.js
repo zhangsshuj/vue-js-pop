@@ -56,8 +56,6 @@ const util = {
     // 获取打包路径
     htmlPluginPath:function(currBuildPackName) {
         const entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
-        console.log('entryHtml:')
-        console.log(entryHtml)
         const reg = new RegExp(`/${currBuildPackName}/`);
         let resPath = "";
         entryHtml.forEach((filePath) => {
@@ -81,7 +79,6 @@ const util = {
             const dirname = dirPath.substring(dirPath.lastIndexOf('/') + 1);
             alias["@" + dirname] = path.join(__dirname, '..', "src/pages/" + dirname)
         })
-        console.log(alias)
         return alias;
     }
 }

@@ -1,5 +1,5 @@
 <template>
-  <button :style="buttonStyle" class="weui-btn" :class="classes" :disabled="disabled" :type="actionType">
+  <button @click="buttonClick" :style="buttonStyle" class="weui-btn" :class="classes" :disabled="disabled" :type="actionType">
     <i class="weui-loading" v-if="showLoading"></i>
     <slot>{{ text }}</slot>
   </button>
@@ -27,6 +27,11 @@ export default {
         return val.length === 2
       }
     }
+  },
+  methods:{
+      buttonClick() {
+          this.$emit('buttonClick')
+      },
   },
   computed: {
     noBorder () {

@@ -60,7 +60,7 @@ const finsuit = function (Vue, options = {}) {
 
     Vue.prototype["$bootstrap"] = bootstrap;
 
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.VUE_APP_CONFIG_NODE_ENV !== 'production') {
         let Vconsole = require("vconsole");
         const vConsole = new Vconsole();
         Vue.use(vConsole)

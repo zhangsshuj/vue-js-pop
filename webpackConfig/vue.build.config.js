@@ -1,11 +1,11 @@
 let util = require('./vue.utils.js')
 let path = require('path')
 let alis = util.getAlias()
-const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.NODE_ENV);
+const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.VUE_APP_CONFIG_NODE_ENV);
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
 const resolve = dir => path.join(__dirname, dir);
 //配置pages多页面获取当前文件夹下的html和js
-console.log(process.env.NODE_ENV)
+console.log(process.env.VUE_APP_CONFIG_NODE_ENV)
 let pages = {};
 let currBuildPackName = ""
 
@@ -25,10 +25,10 @@ console.log("当前包——入口html：", currHtmlPluginPath);
 const publicPath = `./`;
 console.log("当前包——服务器发布目录：", publicPath);
 //配置end
-console.log(util.getAlias());
 module.exports = {
     pages,
-    outputDir: `dist/${process.env.NODE_ENV}/${currBuildPackName}`, //标识是打包哪个文件
+    assetsDir: 'static', // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
+    outputDir: `dist/${process.env.VUE_APP_CONFIG_NODE_ENV}/${currBuildPackName}`, //标识是打包哪个文件
     chainWebpack: config => {
         config.resolve.alias
             .set("vue$", "vue/dist/vue.esm.js")
@@ -48,24 +48,35 @@ module.exports = {
                     analyzerMode: "static"
                 }
             ]);
+            // 删除预加载
+            // config.plugins.delete('preload');
+            // config.plugins.delete('prefetch');
+            // 压缩代码
+            // config.optimization.minimize(false);
+            // 分割代码 防止重复
+            // config.optimization.splitChunks({
+            //     chunks: 'all'
+            // })
         }
         config.module
             .rule('images')
+            .test(/\.(png|jpe?g|gif|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf)(\?.*)?$/)
             .use('url-loader')
-            .loader('url-loader')
+            // .loader('url-loader')
             .tap(options => {
-                // 修改它的选项...
-                options.limit = 100
+                options.limit = 10000
+                // options.name = path.posix.join('static', 'img/[name].[hash:7].[ext]')
                 return options
             })
         Object.keys(pages).forEach(entryName => {
             config.plugins.delete(`prefetch-${entryName}`);
         });
-        if(process.env.NODE_ENV === "production") {
-            config.plugin("extract-css").tap(() => [{
-                path: path.join(__dirname, "./dist"),
-                filename: "css/[name].[contenthash:8].css"
-            }]);
-        }
+        // 是否将组件中的 CSS 提取至一个独立的 CSS 文件中
+        // if(process.env.VUE_APP_CONFIG_NODE_ENV === "production" || process.env.VUE_APP_CONFIG_NODE_ENV === "productionTest") {
+        //     config.plugin("extract-css").tap(() => [{
+        //         path: path.join(__dirname, "./dist"),
+        //         filename: "css/[name].[contenthash:8].css"
+        //     }]);
+        // }
     }
 }

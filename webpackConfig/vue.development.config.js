@@ -9,7 +9,7 @@ cooked = cooked.slice(2);
 let pages = {}
 pages = util.getEntry('./src/pages/**?/*.html',cooked);
 
-console.log(`您正在启动${process.env.NODE_ENV}环境,启动的项目包括[${JSON.stringify(Object.keys(pages))}]`,)
+console.log(`您正在启动${process.env.VUE_APP_CONFIG_NODE_ENV}环境,启动的项目包括[${JSON.stringify(Object.keys(pages))}]`,)
 
 
 //配置end
@@ -51,24 +51,16 @@ module.exports = {
         for(key in alis) {
             config.resolve.alias
                 .set(key, alis[key])
-        }
+        };
         config.module
             .rule('images')
+            .test(/\.(png|jpe?g|gif|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf)(\?.*)?$/)
             .use('url-loader')
-            .loader('url-loader')
+            // .loader('url-loader')
             .tap(options => {
-                // 修改它的选项...
-                options.limit = 100
+                options.limit = 10000
+                // options.name = path.posix.join('static', 'img/[name].[hash:7].[ext]')
                 return options
             })
-        Object.keys(pages).forEach(entryName => {
-            config.plugins.delete(`prefetch-${entryName}`);
-        });
-        if(process.env.NODE_ENV === "production") {
-            config.plugin("extract-css").tap(() => [{
-                path: path.join(__dirname, "./dist"),
-                filename: "css/[name].[contenthash:8].css"
-            }]);
-        }
     }
 }

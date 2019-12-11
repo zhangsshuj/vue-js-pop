@@ -8,7 +8,7 @@ const CONFIG = {
   v: "1.1.0(build Time 2019-08-13 17:18)",
   //开发环境配置
   development: {
-    NODE_ENV: process.env.NODE_ENV,
+    NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
     // 活动code
     actityCode: "FISSION_ACTITY_CODE",
     // api host
@@ -28,7 +28,7 @@ const CONFIG = {
 
   //测试环境配置
   productionTest: {
-    NODE_ENV: process.env.NODE_ENV,
+    NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
     // 活动code
     actityCode: "FISSION_ACTITY_CODE",
     // api host
@@ -44,7 +44,7 @@ const CONFIG = {
 
   //生产环境配置
   production: {
-    NODE_ENV: process.env.NODE_ENV,
+    NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
     // 活动code
     actityCode: "FISSION_ACTITY_CODE",
     // api host
@@ -58,4 +58,4 @@ const CONFIG = {
     resPacketServerHost: (window.location.protocol + '//' + window.location.host) + "/activity/redPacketFission/index.html"
   }
 }
-export default CONFIG[process.env.NODE_ENV];
+export default CONFIG[process.env.VUE_APP_CONFIG_NODE_ENV];

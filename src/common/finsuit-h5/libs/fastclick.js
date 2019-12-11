@@ -13,6 +13,6 @@ FastClick.prototype.focus = function (targetElement) {
 };
 
 console.warn("引入fastclick支持！")
-if (process.env.NODE_ENV == "production" || process.env.NODE_ENV == "productionTest") {
+if (process.env.VUE_APP_CONFIG_NODE_ENV == "production" || process.env.VUE_APP_CONFIG_NODE_ENV == "productionTest") {
     FastClick.attach(document.body);
 }

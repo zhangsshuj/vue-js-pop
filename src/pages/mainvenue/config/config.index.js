@@ -3,16 +3,18 @@
 /**
  * 项目配置文件
  */
-
+console.log('hello')
+console.log(process.env.NODE_ENV)
+console.log(process.env.VUE_APP_CONFIG_NODE_ENV)
 const CONFIG = {
     v: "1.1.0(build Time 2019-08-13 17:18)",
     //开发环境配置
     development: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "COLLAGE_CLUB_ACTIVITY",
         // api host
-        baseUrlHost: "https://app-test4.bicai365.com",
+        baseUrlHost: "https://app-test3.bicai365.com",
         // baseUrlHost: "http://192.168.5.22:8080",
         // baseUrlHost: "http://192.168.100.249:8989",
         // baseUrlHost: "http://easy-mock.liuup.com/mock/5dcbc5480a2f9f42cfec18ae/mainvenue",
@@ -39,11 +41,12 @@ const CONFIG = {
 
     //测试环境配置
     productionTest: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "COLLAGE_CLUB_ACTIVITY",
         // api host
-        baseUrlHost: (window.location.protocol + '//' + window.location.host),
+        // baseUrlHost: (window.location.protocol + '//' + window.location.host),
+        baseUrlHost: 'https://app-test3.bicai365.com',
         // api path
         baseUrlPath: "/finsuit/finsuitPhone/deal",
         // 阿里云静态文件地址
@@ -66,11 +69,12 @@ const CONFIG = {
 
     //生产环境配置
     production: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "COLLAGE_CLUB_ACTIVITY",
         // api host
-        baseUrlHost: (window.location.protocol + '//' + window.location.host),
+        // baseUrlHost: (window.location.protocol + '//' + window.location.host),
+        baseUrlHost: 'https://app-test3.bicai365.com',
         // api path
         baseUrlPath: "/finsuit/finsuitPhone/deal",
         // 阿里云静态文件地址
@@ -91,4 +95,4 @@ const CONFIG = {
         gotoSuperAccount: (window.location.protocol + '//' + window.location.host) + "/asset/index.html"
     }
 }
-export default CONFIG[process.env.NODE_ENV];
+export default CONFIG[process.env.VUE_APP_CONFIG_NODE_ENV];

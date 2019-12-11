@@ -8,7 +8,7 @@ const CONFIG = {
     v: "1.1.0(build Time 2019-08-13 17:18)",
     //开发环境配置
     development: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "ACTITY_RECORD",
         // api host
@@ -25,7 +25,7 @@ const CONFIG = {
 
     //测试环境配置
     productionTest: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "ACTITY_RECORD",
         // api host
@@ -38,7 +38,7 @@ const CONFIG = {
 
     //生产环境配置
     production: {
-        NODE_ENV: process.env.NODE_ENV,
+        NODE_ENV: process.env.VUE_APP_CONFIG_NODE_ENV,
         // 活动code
         actityCode: "ACTITY_RECORD",
         // api host
@@ -49,4 +49,4 @@ const CONFIG = {
         aliyuncHost: "https://finsuit.oss-cn-beijing.aliyuncs.com/"
     }
 }
-export default CONFIG[process.env.NODE_ENV];
+export default CONFIG[process.env.VUE_APP_CONFIG_NODE_ENV];
