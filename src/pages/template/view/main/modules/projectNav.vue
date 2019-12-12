@@ -38,7 +38,10 @@ export default {
       }, {
         projectName: "1218主会场",
         projectUrl: "mainvenue"
-      },]
+      },{
+          projectName: "cube",
+          projectUrl: "cube"
+      }]
     }
   },
   computed: {

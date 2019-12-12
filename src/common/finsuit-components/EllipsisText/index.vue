@@ -62,6 +62,8 @@ export default {
   .ellipsis-text {
     font-size: 24px;
     color: #666;
+    /*word-break: break-word;*/
+    word-break: break-all;
     // line-height: 38px;
   }
 

@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import Button from "@onTopic/components/Button"
-import MaskBox from "@onTopic/components/MaskBox"
+import Button from "../Button"
+import MaskBox from "../MaskBox"
 export default {
   components: { MaskBox, Button },
   props: ["type", "appendElement", "className", "visible", "title", "desc", "content", "btnTxt", "btnDisabled", "btnLoading", "btnCallback", "linkTxt", "linkUrl", "linkCallback"],

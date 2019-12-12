@@ -11,6 +11,14 @@ Vue.use(finsuit);
 import Confirm from "@common/finsuit-components/Confirm"
 Vue.use(Confirm);
 
+/* 注册配置文件 */
+import config from "./config/config.index.js"
+Vue.prototype["$Config"] = config;
+
+/* 创建分享图片 */
+import createShareImage from "./utils/createShareImage.js"
+Vue.prototype["$createShareImage"] = createShareImage;
+
 Vue.config.productionTip = false
 
 const app = new Vue({
