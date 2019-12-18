@@ -9,11 +9,13 @@
     import MaskBox from '@common/finsuit-components/MaskBox'
     import companent1 from './companent1.vue'
     import companent2 from './companent2.vue'
+    import shareImg from './shareImg.vue'
     export default {
         components: {
             MaskBox,
             companent1,
-            companent2
+            companent2,
+            shareImg
         },
         name: '',
         props: {

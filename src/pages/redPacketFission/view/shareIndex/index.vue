@@ -43,7 +43,8 @@ export default {
     },
     mounted() {
         this.$nextTick(() => {
-            this.allPromise();
+            this.autoHtml2canvas()
+//            this.allPromise();
         });
     },
     methods: {
@@ -113,10 +114,11 @@ export default {
                 var context = canvas.getContext("2d");
                 var testImg = canvas.toDataURL("image/jpeg", 1);
                 // console.log("baseImg::完成");
-                window.parent.postMessage(
-                    { message: "html2canvasCallBack", data: testImg },
-                    "*"
-                );
+                window.parent.html2canvasCallBack(testImg)
+//                window.parent.postMessage(
+//                    { message: "html2canvasCallBack", data: testImg },
+//                    "*"
+//                );
             });
         }
     }

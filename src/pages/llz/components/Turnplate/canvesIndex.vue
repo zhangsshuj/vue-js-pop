@@ -1,7 +1,7 @@
 <template>
   <div class="turnplate-container">
     <div class="turnplate-outer">
-      <canvas class="turnplate-inner" ref="canvas" id="wheelcanvas" width="422px" height="422px" style="transform: rotate(252deg);"></canvas>
+      <canvas class="turnplate-inner" ref="canvas" id="wheelcanvas1" width="422px" height="422px" style="transform: rotate(252deg);"></canvas>
       <div class="pointer" @click="btnClick"></div>
     </div>
   </div>
@@ -62,8 +62,8 @@ export default {
         angles = 360 - angles + 270;
       }
 
-      $('#wheelcanvas').stopRotate();
-      $('#wheelcanvas').rotate({
+      $('#wheelcanvas1').stopRotate();
+      $('#wheelcanvas1').rotate({
         angle: 0,
         // 转动的圈数 5*360
         animateTo: angles + 1800,
@@ -71,13 +71,14 @@ export default {
         duration: 8000,
         // 停止后的回调
         callback: () => {
+            this.$emit("gameOver1",index)
           console.log("停止了");
         }
       });
     },
 
     btnClick () {
-      this.$emit("on-click");
+      this.$emit("on-click1");
     },
   }
 }

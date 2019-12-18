@@ -36,7 +36,7 @@ export default {
      * 开始旋转转盘并停止到指定位置
      * index:奖品所在数组中的位置
      */
-    goto (angles) {
+    goto (angles,index) {
 
       $('#wheelcanvas').stopRotate();
       $('#wheelcanvas').rotate({
@@ -48,7 +48,7 @@ export default {
         // 停止后的回调
         callback: () => {
           console.log("停止了");
-          this.$emit("gameOver")
+          this.$emit("gameOver",index)
         }
       });
     },

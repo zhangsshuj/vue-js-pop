@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <ScrollFixedEnd @scrollEnd="isHidden = false" @scroll="isHidden= true">
-      <div id="imgShare">
+      <div id="imgShare1">
         <a href="javascript:void(0);" class="share-btn" :class="{'animeta-hidden':isHidden}" @click="shareFn"></a>
         <div class="ui">
           <h1>组件调用<<>>BUTTON</h1>
@@ -69,7 +69,43 @@
         </div>
         <div class="ui">
           <h1 @click="autoHtml2canvas">截取屏幕</h1>
-          <img :src="canvasSrc" style="margin:auto">
+          <img v-if="canvasSrc" :src="canvasSrc" style="margin:auto">
+        </div>
+        <div class="ui">
+          <h1>图片大转盘</h1>
+          <Turnplate ref="Turnplate" @on-click="btnClick" @gameOver="gameOver"  pointerbg="light":gameCoverImg="gameCoverImg"></Turnplate>
+        </div>
+        <div class="ui">
+          <h1>canves可配置大转盘1</h1>
+          <Turnplate1 ref="Turnplate1" @on-click1="btnClick1" @gameOver1="gameOver1" :list="cList"></Turnplate1>
+        </div>
+        <!--<div class="ui">-->
+          <!--<h1>canves可配置大转盘2</h1>-->
+          <!--<daZhuanPan ref="Turnplate2"></daZhuanPan>-->
+        <!--</div>-->
+        <div class="ui">
+          <h1>九宫格</h1>
+          <div class="lottery-box lamp-animation">
+            <div class="lottery-main">
+              <canvas id="canvas" width="500px" height="375px"></canvas>
+              <div class="btn" :class="{'btn-disabled':btnDisabled}" @click="startTurn">
+                <p>点击抽奖</p>
+                <!-- APP内文案 -->
+                <template>
+                  <span>你有1次抽奖机会</span>
+                  <span>分享获得抽奖机会</span>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui">
+          <h1>刮刮乐</h1>
+          <scratchMusic></scratchMusic>
+        </div>
+        <div class="ui">
+          <btn @click.native="$refs.fanfanpan.ceshi" text="翻翻盘" :gradients="['#fff','#FF5853']"></btn>
+          <fanfanpan ref="fanfanpan" :lotteryData="lotteryData"></fanfanpan>
         </div>
       </div>
     </ScrollFixedEnd>
@@ -90,10 +126,78 @@
   import Toast from "@common/finsuit-components/Toast"
   import QRCode from "qrcode"
   import html2canvas from "html2canvas"
+  const Turnplate = () => import(/* webpackChunkName: "Turnplate" */ "@llz/components/Turnplate/index.vue");
+  const Turnplate1 = () => import(/* webpackChunkName: "Turnplate" */ "@llz/components/Turnplate/canvesIndex.vue");
+  import scratchMusic from  "../components/guaGuaLe/scratchMusic.vue";
+  import daZhuanPan from  "../components/daZhuanPan/daZhuanPan.vue";
+  import fanfanpan from  "../components/fanfanpan";
+  import Sudoku from "../components/lottery/Sudoku.js";
   export default {
-      components: {btn,EllipsisText,EmptyData,MaskBox,Popup,Scroll,ScrollFixedEnd},
+      components: {btn,EllipsisText,EmptyData,MaskBox,Popup,Scroll,ScrollFixedEnd,Turnplate,Turnplate1,scratchMusic,daZhuanPan,fanfanpan},
       data() {
           return {
+            lotteryData:[ // 翻盘数据
+                  {
+                  id: 1,
+                  front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/2773e125-bd02-4f84-8691-8a7e44cc85d4.png",
+                  back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+              },
+                  {
+                      id: 2,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/92e126b9-e304-48f7-9937-f42c92026b5c.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 3,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/47b41c52-a097-4c75-9ee3-21882f4f6dfe.jpg",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 4,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/eab332f8-5bec-42b7-9f64-82a2ff009e75.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 5,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/24d34cf5-5f1b-493c-89e6-dcc8eaea154c.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 6,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/65413cfe-8a6a-4fb9-8cc7-67382f23fb55.jpg",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 7,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/443c9e09-061b-4ff7-bccb-2b22bc3ab02d.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 8,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/be855646-caf5-4206-8383-0b3d66d10239.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  },
+                  {
+                      id: 9,
+                      front_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/05092963-6f47-4652-92d5-83e2e9262c21.png",
+                      back_img: "https://finsuit.oss-cn-beijing.aliyuncs.com/CJ/f3d6e8c7-96d8-4084-bfd2-4fc4063c4ff7.jpg",
+                  }],
+            cList: [
+                  {title: '奖品1'},
+                  {title: '奖品2'},
+                  {title: '奖品3'},
+                  {title: '奖品4'},
+                  {title: '奖品5'},
+                  {title: '奖品6'},
+                  {title: '奖品7'},
+                  {title: '奖品8'},
+                  {title: '奖品9'},
+                  {title: '奖品10'}
+              ], // canves 可配置
+            jiuGongGeinx: 0,
+            btnDisabled:false,
+            context: "", // 九宫格实例画笔
+            sudoku: "",  // 九宫格实例
             isEmptyData: false,
             isMaskBox: false,
             isPopup: false,
@@ -101,20 +205,145 @@
             isHidden: false,
             qrcodeSrc: "", //二维码地址
             canvasSrc: "", //二维码地址
+            gameCoverImg: require("../assets/turnplate-bg.png"),
+            noclick: true,
+            prizeList: ['2元红包','iphoneX','4元红包','戴森吹风机','8元红包','38元红包','爱奇艺年卡','19元红包','华为p30'],
+            awards: [
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品1'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品2'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品3'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品4'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品5'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品6'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品7'},
+                {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品8'}            ]
           }
       },
       mounted() {
           this.$nextTick(() => {
               this.init();
+              this.initJiuGongGe()
           });
       },
       methods: {
+          // 九宫格
+          initJiuGongGe () {
+              var canvas = document.getElementById("canvas");
+              this.context = canvas.getContext("2d");
+
+              this.sudoku = new Sudoku({
+                  sudokuSize: canvas.width,
+                  sudokuItemRadius: 8,                                // 方块圆角阔值
+                  sudokuItemPadding: 2,                              // 方块间padding值
+                  sudokuItemScale: 1.4,                               // 是否变形 比如：正方形或者长方形
+                  sudokuItemMargin: 12,                               // 方块间marggin值
+                  sudokuItemShadowOffsetY: 6,                         // 方块阴影偏移量
+
+                  sudokuItemUnactiveColor: "#fff",                    // 方块背景颜色
+                  // sudokuItemUnactiveTxtColor:"#fff",               // 文字颜色
+                  sudokuItemUnactiveShadowColor: "#ffcec0",           // 方块阴影颜色
+
+                  sudokuItemActiveColor: "#ffe201",                   // 跳动方块颜色
+                  // sudokuItemActiveTxtColor:"#fff",                 // 跳动方块文字颜色
+                  sudokuItemActiveShadowColor: "#f79c00",             // 跳动方块阴影颜色
+
+                  // buttonColor:"#000",                              // 按钮背景颜色
+                  // buttonTxtColor:"#fff",                           // 按钮文字颜色
+                  // buttonShadowColor:"#ccc",                        // 按钮阴影颜色
+
+                  duration: 3000,                                     //中奖后动画停止的时间
+                  velocity: 400,                                      // 动画结尾转动速率
+                  speed: 50,                                          // loading = true 状态下转动的速度
+                  hasButton: "false",                                 // 九宫格是否自带按钮
+                  // delaultActiveIndex:5,                            // 当前已中奖的方块
+
+                  awards: this.awards,
+
+                  // 九宫格停止后的回调
+                  finish: (gamePositionIndex) => {
+                      if (gamePositionIndex == this.jiuGongGeinx) {
+                          Toast({message: `中奖了:${this.awards[gamePositionIndex].name}`})
+                      } else {
+                          Toast({message: '很遗憾'})
+                      }
+                  },
+
+                  // 九宫格自身按钮点击后触发 hasButton = “true” 时有效
+                  onClick: () => { },
+
+                  // 九宫格每格跳动时触发
+                  nextTick: (nextIndex) => { }
+              });
+
+              this.sudoku.render(canvas, this.context);
+          },
+          // 开始转动 进入loading阶段
+          startTurn () {
+              this.sudoku.luckyDraw(this.context);
+              setTimeout(()=>{
+                  this.jiuGongGeinx = Math.floor(Math.random()*9)
+                  this.sudoku.prize(this.jiuGongGeinx);
+              },100)
+          },
+          // 抽奖按钮
+          btnClick1() {
+              if (!this.noclick) {
+                  return
+              }
+              this.noclick = false
+              let index = Math.floor(Math.random()*9)
+              this.gameGoto1(index)
+          },
+          gameOver1(index) {
+              console.log('qq')
+              console.log(index)
+              Toast({message:`恭喜您获得${this.cList[index].title}`})
+              this.noclick = true
+          },
+          // 中奖后，转动到指定奖品位置
+          gameGoto1 (index) {
+              if (typeof index !== "number") {
+                  this.$Toast("抽奖出错,请稍候再试");
+                  return;
+              }
+
+              // 开始转动转盘到指定的角度
+              this.$refs["Turnplate1"].goto(index);
+          },
+          // 抽奖按钮
+          btnClick() {
+              if (!this.noclick) {
+                  return
+              }
+              this.noclick = false
+              let index = Math.floor(Math.random()*9)
+              this.gameGoto(index)
+          },
+          gameOver(index) {
+              console.log('qq')
+              Toast({message:`恭喜您获得${this.prizeList[index]}`})
+              this.noclick = true
+          },
+          // 中奖后，转动到指定奖品位置
+          gameGoto (index) {
+              if (typeof index !== "number") {
+                  this.$Toast("抽奖出错,请稍候再试");
+                  return;
+              }
+              // 中奖后，计算转盘准备停止的目标角度
+              var angles = index * (360 / 9);
+
+              // 开始转动转盘到指定的角度
+              this.$refs["Turnplate"].goto(angles,index);
+          },
           init() {
               this.generateQRCode()
           },
           shareFn() {
+              console.log('share')
               this.$createShareImage((cb) => {
-                  console.log(cb)
+                  console.log(1314)
+                  dialog({componentName:'shareImg',showLoading:false,imgSrc:cb})
               })
           },
           // 生成二维码
@@ -143,7 +372,7 @@
           // 截要分享的图片
           autoHtml2canvas() {
               let that = this
-              html2canvas(document.getElementById("imgShare"), {
+              html2canvas(document.getElementById("imgShare1"), {
                   scale: 1,
                   useCORS: true
               }).then(function(canvas) {
@@ -242,6 +471,95 @@
   }
   .animeta-hidden {
     transform: translateX(75px);
+  }
+
+
+  .lottery-box {
+    width: 710px;
+    height: 579px;
+    margin: 0 auto;
+    background: #feaca9 url("../components/lottery/lamp.png") no-repeat;
+    background-size: 99.5% 99.5%;
+    background-position: center center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 10px solid #feaca9;
+    box-sizing: border-box;
+  }
+
+  .lottery-main {
+    width: 638px;
+    height: 499px;
+    background: #e25341;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    border: 5px solid #e25341;
+    /* box-sizing: border-box; */
+  }
+
+  .lottery-main canvas {
+    width: 638px;
+    height: 499px;
+  }
+
+  .lottery-main .btn {
+    width: 200px;
+    height: 146px;
+    border-radius: 10px;
+    /* background: #ffe201; */
+    background: repeating-linear-gradient(
+                    -45deg,
+                    #ffd901 0,
+                    #ffd901 5px,
+                    #ffe201 0,
+                    #ffe201 20px
+    );
+
+    color: #fff;
+    box-shadow: 0px 10px 1px 0px #f79c00;
+    /* line-height: 153px; */
+    position: absolute;
+    left: 219px;
+    top: 170px;
+    color: #d92a00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .lottery-main .btn p {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  .lottery-main .btn span {
+    font-size: 22px;
+  }
+
+  .lottery-main .btn-disabled {
+    background: #ddd;
+    box-shadow: 0px 10px 1px 0px #ccc;
+    color: #999;
+  }
+
+  /* 跑马灯 */
+  .lamp-animation {
+    animation: lamp 0.5s linear infinite;
+  }
+
+  @keyframes lamp {
+    0% {
+      background-image: url("../components/lottery/lamp.png");
+    }
+
+    100% {
+      background-image: url("../components/lottery/lamp2.png");
+    }
   }
 
 </style>

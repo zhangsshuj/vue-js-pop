@@ -3,10 +3,15 @@ export default function (cb) {
     document.getElementById("menuFrame").remove();
     cb(base64);
   }
+    // window.addEventListener('message',function(e){
+    //     console.log('res')
+    //     console.log(e.data)
+    //     console.log('res')
+    // },false);
 
   let iframeSrc = "";
   // iframeSrc = window.location.href.split("#")[0];
-  iframeSrc = `http://localhost:8088/redPacketFission.html`;
+  iframeSrc = `http://192.168.5.163:8088/redPacketFission.html`;
   iframeSrc += `#/shareIndex`;
   iframeSrc += `?ACTITY_ID=${this.$store.state.ACTITY_ID}`;
   iframeSrc += `&INVITE_ID=${this.$store.state.ID}`;
