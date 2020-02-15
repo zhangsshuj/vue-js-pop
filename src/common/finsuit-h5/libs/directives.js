@@ -1,6 +1,20 @@
 export default {
     install: Vue => {
-
+        var timer = null,
+            fn = function(el) {
+                timer = setInterval(() => {
+                    let r = Math.ceil(Math.random()*255)
+                    let g = Math.ceil(Math.random()*255)
+                    let b = Math.ceil(Math.random()*255)
+                    el.style.background = `rgba(${r},${g},${b})`
+                    el.style.width = `${r}px`
+                    el.style.height = `${g}px`
+                    el.style.margin = 'auto'
+                    // el.style.transform = `rotate3d(${r},${g},${b},${r}deg)`
+                    el.style.transform = `perspective(500px) rotate3d(${r},${g},${b},${r}deg)`
+                    el.style.transition = 'all .5s linear'
+                },1000);
+            }
         /**
          * 解决微信ios中input失去焦点不回弹问题
          * v-wxBlur
@@ -42,6 +56,59 @@ export default {
                         }, 100)
                     }
                 }
+            }
+        })
+
+        Vue.directive('tipBak', {
+            bind: function(el,binding) {
+                console.log('bind')
+                let bind  = binding.value
+                if (binding.arg) {
+                    console.log('timer1')
+                    fn(el)
+                } else {
+                    console.log('timer2')
+                    if (timer) window.clearInterval(timer)
+                    el.style.width = '100%'
+                    el.style.height = '100px'
+                    el.style.background = bind.color
+                }
+            },
+            inserted: function (el) {
+                console.log('inserted')
+            },
+            update: function (el,binding) {
+                console.log('update')
+                let bind  = binding.value
+                if (timer) window.clearInterval(timer)
+                if (binding.arg) {
+                    fn(el)
+                } else {
+                    el.style.width = '100%'
+                    el.style.height = '100px'
+                    el.style.background = bind.color
+                }
+            },
+            componentUpdated: function (el) {
+               console.log('componentUpdated')
+            },
+            unbind: function (el) {
+                console.log('unbind')
+            }
+        })
+
+        Vue.directive("scroll", {
+            inserted: function (el, binding) {
+                console.log('div-div')
+                let fn = binding.value;
+                window.addEventListener('scroll', function (e) {
+                    console.log('top:'+ el.getBoundingClientRect().top);
+                    console.log('scrollHeight:'+el.scrollHeight);
+                    console.log('scrollTop:'+el.scrollTop);
+                    console.log('offsetHeight:'+el.offsetHeight);
+                    console.log('offsetTop:'+el.offsetTop);
+                    console.log('scrollTop:'+ el.scrollTop);
+                })
             }
         })
 

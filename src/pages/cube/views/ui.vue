@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" v-scroll>
     <ScrollFixedEnd @scrollEnd="isHidden = false" @scroll="isHidden= true">
       <div id="imgShare1">
         <a href="javascript:void(0);" class="share-btn" :class="{'animeta-hidden':isHidden}" @click="shareFn"></a>
@@ -104,8 +104,117 @@
           <scratchMusic></scratchMusic>
         </div>
         <div class="ui">
-          <btn @click.native="$refs.fanfanpan.ceshi" text="翻翻盘" :gradients="['#fff','#FF5853']"></btn>
+          <btn @click.native="$refs.fanfanpan.ceshi" text="测试" :gradients="['#fff','#FF5853']"></btn>
+          <btn @click.native="$refs.fanfanpan.turn" text="翻盘" :gradients="['#fff','#FF5853']"></btn>
+          <btn @click.native="$refs.fanfanpan.shuffle" text="洗盘" :gradients="['#fff','#FF5853']"></btn>
+          <btn @click.native="$refs.fanfanpan.show" text="明盘" :gradients="['#fff','#FF5853']"></btn>
           <fanfanpan ref="fanfanpan" :lotteryData="lotteryData"></fanfanpan>
+        </div>
+        <div class="ui">
+          <btn @click.native="getBrowserFn" text="获取版本信息..." :gradients="['#fff','#FF5853']"></btn>
+          <pre style="text-align: left;white-space: pre-line">
+            UA:{{getBrowserInfo.UA}}
+            BROWSER:{{getBrowserInfo.BROWSER}}
+            BROWSER_VERSION:{{getBrowserInfo.BROWSER_VERSION}}
+            BROWSER_NAME:{{getBrowserInfo.BROWSER_NAME}}
+            OS:{{getBrowserInfo.OS}}
+            OS_VERSION:{{getBrowserInfo.OS_VERSION}}
+            NETWORK_TYPE:{{getBrowserInfo.NETWORK_TYPE}}
+          </pre>
+        </div>
+        <div class="ui">
+          <h1>解决微信ios中input失去焦点不回弹问题</h1>
+          <input v-wxBlur type="text" style="width: 100%;height: 50px">
+        </div>
+        <div class="ui">
+          <h1>图标symbol</h1>
+          <ul class="icon-box">
+            <li>
+              <svg class="icon dianying" aria-hidden="true">
+                <use xlink:href="#icon-dianying1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiangji"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shandian1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-zhiwen"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-guanzhu"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-anquan"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-chenggong"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-riqian"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-youhuiquan"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-WIFI"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="ui">
+          <h1 @click="isColor = !isColor">vue指令</h1>
+          <div v-tipBak:[isColor]="{color: 'red'}"></div>
+        </div>
+        <div class="ui">
+          <h1>状态持久化</h1>
+          <div>
+            {{feed}}
+          </div>
+        </div>
+        <div class="ui">
+          <h1 @click="$router.push({path:'vs'})">账户vs</h1>
+        </div>
+        <div class="ui">
+          <h1 @click="$router.push({path: '/editor'})">编辑器1</h1>
+        </div>
+        <div class="ui">
+          <h1 @click="$router.push({path: '/editor1'})">编辑器2</h1>
+        </div>
+        <div class="ui">
+          <h1 @click="$router.push({path: '/editor2'})">编辑器3</h1>
+        </div>
+        <div class="ui">
+          <h1>图标unicode</h1>
+          <span class="iconfont">&#xe663</span>
+        </div>
+        <div class="ui">
+          <h1>图标icon-class</h1>
+          <span class="iconfont icon-zengjiasuojin"></span>
+          <span class="iconfont icon-jianshaoasuojin"></span>
+          <span class="iconfont icon-youduiqi"></span>
+        </div>
+        <div class="ui">
+          <h1 @click="$router.push({path: '/css'})">css</h1>
         </div>
       </div>
     </ScrollFixedEnd>
@@ -132,10 +241,30 @@
   import daZhuanPan from  "../components/daZhuanPan/daZhuanPan.vue";
   import fanfanpan from  "../components/fanfanpan";
   import Sudoku from "../components/lottery/Sudoku.js";
+  import {mapState,mapActions} from 'vuex'
   export default {
       components: {btn,EllipsisText,EmptyData,MaskBox,Popup,Scroll,ScrollFixedEnd,Turnplate,Turnplate1,scratchMusic,daZhuanPan,fanfanpan},
       data() {
           return {
+            config : {
+                // 接口地址
+                uploadUrl: '',
+                // form 里的 filename
+                uploadName: '',
+                // 其他参数
+                uploadParams: {},
+                // 上传成功回调
+                uploadCallback: (data) => {
+                    console.log(data)
+                    return 'blob:https://fiddle.jshell.net/00a0b0b4-d19a-4860-9796-137692aef36f'
+                },
+                // 上传失败回调, 可选
+                uploadFailed: (err) => {
+                    console.log(err)
+                }
+            },
+            isColor: false,
+            getBrowserInfo: {},
             lotteryData:[ // 翻盘数据
                   {
                   id: 1,
@@ -219,240 +348,296 @@
                 {type:'image',content: require('../components/lottery/prize-1.png'),name: '奖品8'}            ]
           }
       },
+      computed: {
+          ...mapState({
+              feed: state => state.feedback.quesData
+          })
+      },
       mounted() {
+          this.sendQuesData([{a:1,b:2}]).then(() => {
+              console.log('finsh')
+          })
+//          this.$store.dispatch('sendQuesData',[{a:1,b:2}]).then(()=> {
+//              console.log('my-1')
+//          })
+          this.$localStore('set','p1',{a:1})
+          setTimeout(()=>{this.$localStore('get','p1',{}, (res)=> {
+              console.log('hddl')
+              console.log(res)
+              this.$localStore('set','p2',{b:1})
+              this.$localStore('set','p3',{c:1})
+          })},6000)
+//          setTimeout(()=>{this.$store.commit('setQuesData',[{a:1,b:4}])},6000)
           this.$nextTick(() => {
               this.init();
               this.initJiuGongGe()
           });
+          if (window.history && window.history.pushState) {
+              history.pushState({a:1}, 'hello', document.URL); // 向history添加新记录
+              window.addEventListener('popstate', this.cancel, false);
+          }
+      },
+      destroyed(){
+          window.removeEventListener('popstate', this.cancel, false);
       },
       methods: {
-          // 九宫格
-          initJiuGongGe () {
-              var canvas = document.getElementById("canvas");
-              this.context = canvas.getContext("2d");
-
-              this.sudoku = new Sudoku({
-                  sudokuSize: canvas.width,
-                  sudokuItemRadius: 8,                                // 方块圆角阔值
-                  sudokuItemPadding: 2,                              // 方块间padding值
-                  sudokuItemScale: 1.4,                               // 是否变形 比如：正方形或者长方形
-                  sudokuItemMargin: 12,                               // 方块间marggin值
-                  sudokuItemShadowOffsetY: 6,                         // 方块阴影偏移量
-
-                  sudokuItemUnactiveColor: "#fff",                    // 方块背景颜色
-                  // sudokuItemUnactiveTxtColor:"#fff",               // 文字颜色
-                  sudokuItemUnactiveShadowColor: "#ffcec0",           // 方块阴影颜色
-
-                  sudokuItemActiveColor: "#ffe201",                   // 跳动方块颜色
-                  // sudokuItemActiveTxtColor:"#fff",                 // 跳动方块文字颜色
-                  sudokuItemActiveShadowColor: "#f79c00",             // 跳动方块阴影颜色
-
-                  // buttonColor:"#000",                              // 按钮背景颜色
-                  // buttonTxtColor:"#fff",                           // 按钮文字颜色
-                  // buttonShadowColor:"#ccc",                        // 按钮阴影颜色
-
-                  duration: 3000,                                     //中奖后动画停止的时间
-                  velocity: 400,                                      // 动画结尾转动速率
-                  speed: 50,                                          // loading = true 状态下转动的速度
-                  hasButton: "false",                                 // 九宫格是否自带按钮
-                  // delaultActiveIndex:5,                            // 当前已中奖的方块
-
-                  awards: this.awards,
-
-                  // 九宫格停止后的回调
-                  finish: (gamePositionIndex) => {
-                      if (gamePositionIndex == this.jiuGongGeinx) {
-                          Toast({message: `中奖了:${this.awards[gamePositionIndex].name}`})
-                      } else {
-                          Toast({message: '很遗憾'})
-                      }
-                  },
-
-                  // 九宫格自身按钮点击后触发 hasButton = “true” 时有效
-                  onClick: () => { },
-
-                  // 九宫格每格跳动时触发
-                  nextTick: (nextIndex) => { }
-              });
-
-              this.sudoku.render(canvas, this.context);
+        ...mapActions({
+            sendQuesData: 'feedback/sendQuesData'
+        }),
+        cancel: function(event) {
+            if(this.$route.query.ACTITY_ID){
+                this.$router.replace({
+                    path:'/'
+                })
+            }else{
+                this.$router.go(-1);
+            }
           },
-          // 开始转动 进入loading阶段
-          startTurn () {
-              this.sudoku.luckyDraw(this.context);
-              setTimeout(()=>{
-                  this.jiuGongGeinx = Math.floor(Math.random()*9)
-                  this.sudoku.prize(this.jiuGongGeinx);
-              },100)
-          },
-          // 抽奖按钮
-          btnClick1() {
-              if (!this.noclick) {
-                  return
-              }
-              this.noclick = false
-              let index = Math.floor(Math.random()*9)
-              this.gameGoto1(index)
-          },
-          gameOver1(index) {
-              console.log('qq')
-              console.log(index)
-              Toast({message:`恭喜您获得${this.cList[index].title}`})
-              this.noclick = true
-          },
-          // 中奖后，转动到指定奖品位置
-          gameGoto1 (index) {
-              if (typeof index !== "number") {
-                  this.$Toast("抽奖出错,请稍候再试");
-                  return;
-              }
+      touchmoveFn(res) {
+         console.log(res)
+      },
+      // 获取信息
+      getBrowserFn() {
+        this.getBrowserInfo = this.$browser
+      },
+      // 九宫格
+      initJiuGongGe () {
+          var canvas = document.getElementById("canvas");
+          this.context = canvas.getContext("2d");
 
-              // 开始转动转盘到指定的角度
-              this.$refs["Turnplate1"].goto(index);
-          },
-          // 抽奖按钮
-          btnClick() {
-              if (!this.noclick) {
-                  return
-              }
-              this.noclick = false
-              let index = Math.floor(Math.random()*9)
-              this.gameGoto(index)
-          },
-          gameOver(index) {
-              console.log('qq')
-              Toast({message:`恭喜您获得${this.prizeList[index]}`})
-              this.noclick = true
-          },
-          // 中奖后，转动到指定奖品位置
-          gameGoto (index) {
-              if (typeof index !== "number") {
-                  this.$Toast("抽奖出错,请稍候再试");
-                  return;
-              }
-              // 中奖后，计算转盘准备停止的目标角度
-              var angles = index * (360 / 9);
+          this.sudoku = new Sudoku({
+              sudokuSize: canvas.width,
+              sudokuItemRadius: 8,                                // 方块圆角阔值
+              sudokuItemPadding: 2,                              // 方块间padding值
+              sudokuItemScale: 1.4,                               // 是否变形 比如：正方形或者长方形
+              sudokuItemMargin: 12,                               // 方块间marggin值
+              sudokuItemShadowOffsetY: 6,                         // 方块阴影偏移量
 
-              // 开始转动转盘到指定的角度
-              this.$refs["Turnplate"].goto(angles,index);
-          },
-          init() {
-              this.generateQRCode()
-          },
-          shareFn() {
-              console.log('share')
-              this.$createShareImage((cb) => {
-                  console.log(1314)
-                  dialog({componentName:'shareImg',showLoading:false,imgSrc:cb})
-              })
-          },
-          // 生成二维码
-          generateQRCode() {
-              // 二维码&链接
-              let _this = this;
-              let url = this.$Config.resPacketServerHost;
-              url += "#/";
-              url += `?FROM_APP_FLAG=BC`;
-              url += `&ACTITY_ID=122`;
-              url += `&SHARE_MEMBER_ID=112`;
-              url += `&SHARE_DATE=1`;
-              console.log("二维码地址", url);
-              QRCode.toDataURL(
-                  url,
-                  {
-                      margin: 1
-                  },
-                  function(err, url) {
-                      console.log(_this.qrcodeSrc)
-                      _this.qrcodeSrc = url;
+              sudokuItemUnactiveColor: "#fff",                    // 方块背景颜色
+              // sudokuItemUnactiveTxtColor:"#fff",               // 文字颜色
+              sudokuItemUnactiveShadowColor: "#ffcec0",           // 方块阴影颜色
+
+              sudokuItemActiveColor: "#ffe201",                   // 跳动方块颜色
+              // sudokuItemActiveTxtColor:"#fff",                 // 跳动方块文字颜色
+              sudokuItemActiveShadowColor: "#f79c00",             // 跳动方块阴影颜色
+
+              // buttonColor:"#000",                              // 按钮背景颜色
+              // buttonTxtColor:"#fff",                           // 按钮文字颜色
+              // buttonShadowColor:"#ccc",                        // 按钮阴影颜色
+
+              duration: 3000,                                     //中奖后动画停止的时间
+              velocity: 400,                                      // 动画结尾转动速率
+              speed: 50,                                          // loading = true 状态下转动的速度
+              hasButton: "false",                                 // 九宫格是否自带按钮
+              // delaultActiveIndex:5,                            // 当前已中奖的方块
+
+              awards: this.awards,
+
+              // 九宫格停止后的回调
+              finish: (gamePositionIndex) => {
+                  if (gamePositionIndex == this.jiuGongGeinx) {
+                      Toast({message: `中奖了:${this.awards[gamePositionIndex].name}`})
+                  } else {
+                      Toast({message: '很遗憾'})
                   }
-              );
-          },
-          // canvas 截取
-          // 截要分享的图片
-          autoHtml2canvas() {
-              let that = this
-              html2canvas(document.getElementById("imgShare1"), {
-                  scale: 1,
-                  useCORS: true
-              }).then(function(canvas) {
-                  var context = canvas.getContext("2d");
-                  var testImg = canvas.toDataURL("image/jpeg", 1);
-                  that.canvasSrc = testImg
-              });
-          },
-          // confirm 弹框
-          ConfirmFn(type) {
-              console.log(type)
-             switch (type) {
-                 case '$iosAlert':
-                     this.$iosAlert({title: '$iosAlert',text: '123'})
-                     break;
-                 case '$iosConfirm':
-                     this.$iosConfirm({title: '$iosConfirm',text: '123'}).then((res) => {
-                         console.log('res')
-                     },(err) => {
-                         console.log('err')
-                     })
-                     break;
-                 case '$iosPrompt':
-                     this.$iosPrompt({title: '$iosPrompt',text: '123', placeholder: '请输入'}).then((res) => {
-                         console.log('res')
-                     }, (err) => {
-                         console.log('err')
-                     })
-                     break;
-                 case '$iosRemind':
-                     this.$iosRemind({title: '$iosRemind',text: '123'})
-                     break;
-             }
-          },
-          //HttpErrorDialog
-          HttpErrorDialogFn() {
-              HttpErrorDialog({btnCallback:this.btnCallback,desc:'描述',title:'比财',btnTxt:'确定',content:'content',linkTxt: 'https://www.baidu.com'})
-          },
-          btnCallback() {
-              HttpErrorDialog().visible = false
-          },
-          // LoadingFn
-          LoadingFn() {
-              let Load = Loading({message:'hello'})
-              Load.show()
-              setTimeout(()=>{Load.close()},1000)
-          },
-          // dialogFn
-          dialogFn() {
-              let dog = dialog({componentName:'companent1',showLoading:false,title:'分享1',value:111,btn: '分享1'})
-              setTimeout(()=>{
-                  dog.propsData.title = '分享2'
-                  dog.propsData.value = 222
-                  dog.propsData.btn = '分享2'
-                  dog.propsData.btnCallBack = this.btnCallBack
-                  dog.propsData.componentName = 'companent2';
-              },3000)
-          },
-          btnCallBack() {
-              console.log('分享2')
-          },
-          scrollToEnd() {
-              console.log('end')
-          },
-          scrollFn(pop) {
-              console.log('scroll',pop)
-          },
-          ThrowNewPageFn() {
-              let tPage = ThrowNewPage({componentName:'NETWORK_ERROR_PAGE',onClick:this.btnCallBack})
-          },
-          ToastFn() {
-              let toa = Toast({message:'toast',duration: 1000})
+              },
+
+              // 九宫格自身按钮点击后触发 hasButton = “true” 时有效
+              onClick: () => { },
+
+              // 九宫格每格跳动时触发
+              nextTick: (nextIndex) => { }
+          });
+
+          this.sudoku.render(canvas, this.context);
+      },
+      // 开始转动 进入loading阶段
+      startTurn () {
+          this.sudoku.luckyDraw(this.context);
+          setTimeout(()=>{
+              this.jiuGongGeinx = Math.floor(Math.random()*9)
+              this.sudoku.prize(this.jiuGongGeinx);
+          },100)
+      },
+      // 抽奖按钮
+      btnClick1() {
+          if (!this.noclick) {
+              return
+          }
+          this.noclick = false
+          let index = Math.floor(Math.random()*9)
+          this.gameGoto1(index)
+      },
+      gameOver1(index) {
+          console.log('qq')
+          console.log(index)
+          Toast({message:`恭喜您获得${this.cList[index].title}`})
+          this.noclick = true
+      },
+      // 中奖后，转动到指定奖品位置
+      gameGoto1 (index) {
+          if (typeof index !== "number") {
+              this.$Toast("抽奖出错,请稍候再试");
+              return;
           }
 
+          // 开始转动转盘到指定的角度
+          this.$refs["Turnplate1"].goto(index);
+      },
+      // 抽奖按钮
+      btnClick() {
+          if (!this.noclick) {
+              return
+          }
+          this.noclick = false
+          let index = Math.floor(Math.random()*9)
+          this.gameGoto(index)
+      },
+      gameOver(index) {
+          console.log('qq')
+          Toast({message:`恭喜您获得${this.prizeList[index]}`})
+          this.noclick = true
+      },
+      // 中奖后，转动到指定奖品位置
+      gameGoto (index) {
+          if (typeof index !== "number") {
+              this.$Toast("抽奖出错,请稍候再试");
+              return;
+          }
+          // 中奖后，计算转盘准备停止的目标角度
+          var angles = index * (360 / 9);
+
+          // 开始转动转盘到指定的角度
+          this.$refs["Turnplate"].goto(angles,index);
+      },
+      init() {
+          this.generateQRCode()
+      },
+      shareFn() {
+          console.log('share')
+          this.$createShareImage((cb) => {
+              console.log(1314)
+              dialog({componentName:'shareImg',showLoading:false,imgSrc:cb})
+          })
+      },
+      // 生成二维码
+      generateQRCode() {
+          // 二维码&链接
+          let _this = this;
+          let url = this.$Config.resPacketServerHost;
+          url += "#/";
+          url += `?FROM_APP_FLAG=BC`;
+          url += `&ACTITY_ID=122`;
+          url += `&SHARE_MEMBER_ID=112`;
+          url += `&SHARE_DATE=1`;
+          console.log("二维码地址", url);
+          QRCode.toDataURL(
+              url,
+              {
+                  margin: 1
+              },
+              function(err, url) {
+                  console.log(_this.qrcodeSrc)
+                  _this.qrcodeSrc = url;
+              }
+          );
+      },
+      // canvas 截取
+      // 截要分享的图片
+      autoHtml2canvas() {
+          let that = this
+          html2canvas(document.getElementById("imgShare1"), {
+              scale: 1,
+              useCORS: true
+          }).then(function(canvas) {
+              var context = canvas.getContext("2d");
+              var testImg = canvas.toDataURL("image/jpeg", 1);
+              that.canvasSrc = testImg
+          });
+      },
+      // confirm 弹框
+      ConfirmFn(type) {
+          console.log(type)
+         switch (type) {
+             case '$iosAlert':
+                 this.$iosAlert({title: '$iosAlert',text: '123'})
+                 break;
+             case '$iosConfirm':
+                 this.$iosConfirm({title: '$iosConfirm',text: '123'}).then((res) => {
+                     console.log('res')
+                 },(err) => {
+                     console.log('err')
+                 })
+                 break;
+             case '$iosPrompt':
+                 this.$iosPrompt({title: '$iosPrompt',text: '123', placeholder: '请输入'}).then((res) => {
+                     console.log('res')
+                 }, (err) => {
+                     console.log('err')
+                 })
+                 break;
+             case '$iosRemind':
+                 this.$iosRemind({title: '$iosRemind',text: '123'})
+                 break;
+         }
+      },
+      //HttpErrorDialog
+      HttpErrorDialogFn() {
+          HttpErrorDialog({btnCallback:this.btnCallback,desc:'描述',title:'比财',btnTxt:'确定',content:'content',linkTxt: 'https://www.baidu.com'})
+      },
+      btnCallback() {
+          HttpErrorDialog().visible = false
+      },
+      // LoadingFn
+      LoadingFn() {
+          let Load = Loading({message:'hello'})
+          Load.show()
+          setTimeout(()=>{Load.close()},1000)
+      },
+      // dialogFn
+      dialogFn() {
+          let dog = dialog({componentName:'companent1',showLoading:false,title:'分享1',value:111,btn: '分享1'})
+          setTimeout(()=>{
+              dog.propsData.title = '分享2'
+              dog.propsData.value = 222
+              dog.propsData.btn = '分享2'
+              dog.propsData.btnCallBack = this.btnCallBack
+              dog.propsData.componentName = 'companent2';
+          },3000)
+      },
+      btnCallBack() {
+          console.log('分享2')
+      },
+      scrollToEnd() {
+          console.log('end')
+      },
+      scrollFn(pop) {
+          console.log('scroll',pop)
+      },
+      ThrowNewPageFn() {
+          let tPage = ThrowNewPage({componentName:'NETWORK_ERROR_PAGE',onClick:this.btnCallBack})
+      },
+      ToastFn() {
+          let toa = Toast({message:'toast',duration: 1000})
       }
+
+  }
   }
 </script>
 <style lang="scss" scoped>
   .about{
     position: relative;
+  }
+  .dianying{
+    fill: red;
+  }
+  .icon-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+      width: 5em;
+    }
   }
   .ui{
     margin-bottom: 50px;

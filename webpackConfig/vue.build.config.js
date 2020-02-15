@@ -5,10 +5,8 @@ const IS_PROD = ["production", "productionTest", "dev"].includes(process.env.VUE
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
 const resolve = dir => path.join(__dirname, dir);
 //配置pages多页面获取当前文件夹下的html和js
-console.log(process.env.VUE_APP_CONFIG_NODE_ENV)
 let pages = {};
 let currBuildPackName = ""
-
 const entries = util.getOutPut('./src/pages/**?/*.js');
 currBuildPackName = JSON.parse(process.env.npm_config_argv).remain[0];
 console.log("当前包命令：", currBuildPackName);
