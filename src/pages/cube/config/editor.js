@@ -1,0 +1,23 @@
+export default {
+    aligncenter: require('../assets/editor/aligncenter.png'),
+    alignleft: require('../assets/editor/alignleft.png'),
+    alignright: require('../assets/editor/alignright.png'),
+    color: require('../assets/editor/color.png'),
+    indent: require('../assets/editor/indent.png'),
+    insertlink: require('../assets/editor/insert-link.png'),
+    insertimage: require('../assets/editor/insertimage.png'),
+    insertlinetop: require('../assets/editor/insertlinetop.png'),
+    insertquote: require('../assets/editor/insertquote.png'),
+    insertvideo: require('../assets/editor/insertvideo.png'),
+    italic: require('../assets/editor/italic.png'),
+    listcheck: require('../assets/editor/list-check.png'),
+    listordered: require('../assets/editor/listordered.png'),
+    listUnordered: require('../assets/editor/listUnordered.png'),
+    outdent: require('../assets/editor/outdent.png'),
+    redo: require('../assets/editor/redo.png'),
+    removeformat: require('../assets/editor/removeformat.png'),
+    strikethrough: require('../assets/editor/strike-through.png'),
+    underline: require('../assets/editor/under_line.png'),
+    undo: require('../assets/editor/undo.png'),
+    bold: require('../assets/editor/bold.png')
+}
