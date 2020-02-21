@@ -1,24 +1,26 @@
 <template>
-    <div>
-        <div v-for="it in hh">
-            <slot name="one">{{$root.foo}}</slot>
-        </div>
+    <div @click="testFn">
+        san
     </div>
 </template>
 <script>
     export default {
         name: '',
-        props: ['hh'],
+        props: [],
         data() {
             return {
-                one: '123',
-                b: 3
+                mode: dark
             }
         },
-        methods: {},
+        methods: {
+            testFn() {
+                this.$emit('test', '123000')
+            },
+        },
         computed: {},
         watch: {},
         created() {
+            console.log(this.$attrs.test)
         },
         mounted() {
         },

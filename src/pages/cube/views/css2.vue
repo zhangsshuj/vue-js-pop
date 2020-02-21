@@ -8,7 +8,9 @@
         name: '',
         props: ['value'],
         data() {
-            return {}
+            return {
+                a:1
+            }
         },
         methods: {},
         computed: {},
