@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="$style.red">
     <!--<div id="nav">-->
       <!--<router-link to="/">Home</router-link> |-->
       <!--<router-link to="/about">About</router-link>-->
@@ -7,7 +7,14 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+  export default {
+      created() {
+          this.$style.red = 'cdd'
+          this.$style.red = 'red11'
+      }
+  }
+</script>
 <style lang="scss">
   /*@import "./assets/icon/iconfont.css";*/
   @font-face {font-family: "iconfont";
@@ -45,4 +52,11 @@
     }
   }
 }
+</style>
+<style module>
+
+  .red{
+    background: red;
+  }
+
 </style>

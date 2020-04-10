@@ -216,6 +216,10 @@
         <div class="ui">
           <h1 @click="$router.push({path: '/css'})">css</h1>
         </div>
+        <div class="ui">
+          <h1 @click="getParentWin('set')">set父window的值</h1>
+          <h1 @click="getParentWin('get')">get父window的值</h1>
+        </div>
       </div>
     </ScrollFixedEnd>
   </div>
@@ -246,6 +250,7 @@
       components: {btn,EllipsisText,EmptyData,MaskBox,Popup,Scroll,ScrollFixedEnd,Turnplate,Turnplate1,scratchMusic,daZhuanPan,fanfanpan},
       data() {
           return {
+            cross: null,
             config : {
                 // 接口地址
                 uploadUrl: '',
@@ -354,6 +359,8 @@
           })
       },
       mounted() {
+          this.cross = null
+          this.cross = new this.$storageCross({})
           this.sendQuesData([{a:1,b:2}]).then(() => {
               console.log('finsh')
           })
@@ -381,6 +388,20 @@
           window.removeEventListener('popstate', this.cancel, false);
       },
       methods: {
+          getParentWin(type) {
+              this.cross = null
+              if (type == 'set') {
+                  this.cross = new this.$storageCross({ key: 'test2', val: '2', type: 'setItem', callBack: function(res) {
+                      console.log(res)
+                  }
+                  }).postMessage()
+              } else {
+                  this.cross = new this.$storageCross({ key: 'loglevel:webpack-dev-server', type: 'getItem', callBack: function(res) {
+                      console.log(res)
+                  }
+                  }).postMessage()
+              }
+          },
         ...mapActions({
             sendQuesData: 'feedback/sendQuesData'
         }),

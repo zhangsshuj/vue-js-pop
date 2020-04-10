@@ -3,13 +3,16 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 require('@assets/iconfont.js')
+Vue.config.silent = true
 
 /* 安装finsuit插件包 */
 import finsuit from "@common/finsuit-h5"
 Vue.use(finsuit);
 
 import localStore from "./utils/localStore.js"
+import storageCross from "./utils/storageCross.js"
 Vue.prototype["$localStore"] = localStore;
+Vue.prototype["$storageCross"] = storageCross;
 
 // 安装v-wxBlur
 import wxBlur from "@common/finsuit-h5/libs/directives"
