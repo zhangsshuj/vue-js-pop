@@ -1,30 +1,38 @@
 <template>
-    <div>
+    <div id="css">
         <css1 :hh="hh" @click.native="$root.dosome">
             <template v-slot:one>
             </template>
         </css1>
-        <css2 v-model="aa" @click.native="aaFn">22</css2>
-        <css3 #san>33</css3>
+        <css2 v-model="aa" @click.native="aaFn">2222</css2>
+        <css3 #san type="test">33333</css3>
+        <css4>
+            <template v-slot:css4="slotProps">
+                {{ slotProps.user.lastName }}
+            </template>
+        </css4>
     </div>
 </template>
 <script>
     import css1 from './css1.vue'
     import css2 from './css2.vue'
     import css3 from './css3.vue'
+    import css4 from './css4.vue'
     export default {
-        components: {css1,css2,css3},
+        components: {css1,css2,css3,css4},
         name: '',
         props: [],
         data() {
             return {
                 aa:123,
-                hh: [{a:1},{a:2},{a:3}]
+                hh: [{a:1},{a:2},{a:3}],
+                todos: [ {text: 'c',id: '1',isComplete:true},
+                    {text: 'd',id: '2',isComplete:true}]
             }
         },
         methods: {
             aaFn() {
-                this.aa = 456
+                this.aa = 4561
             },
             getMap() {
                 return 100
@@ -69,7 +77,11 @@
         },
         },
         computed: {},
-        watch: {},
+        watch: {
+            aa() {
+                console.log('aa',this.aa)
+            }
+        },
         created() {
         },
         provide:function () {

@@ -1,5 +1,5 @@
 <template>
-    <div @click="testFn">
+    <div @click.stop="testFn" id="css3">
         san
     </div>
 </template>
@@ -9,11 +9,12 @@
         props: [],
         data() {
             return {
-                mode: dark
+                mode: 'dark'
             }
         },
         methods: {
             testFn() {
+                console.log(this.$attrs)
                 this.$emit('test', '123000')
             },
         },

@@ -1,17 +1,20 @@
 <template>
     <div>
-        <slot name="san">3</slot>
-        <css33 v-bind="$attrs"></css33>
+        <a
+                v-bind:href="url"
+                class="nav-link"
+        >
+            <slot name="css4" v-bind:user="user">{{user.firstName}}</slot>
+        </a>
     </div>
 </template>
 <script>
-    import css33 from './css33.vue'
     export default {
-        components: {css33},
         name: '',
-        props: [],
         data() {
-            return {}
+            return {
+               user: {'firstName': 'zhang','lastName': 'shujun'}
+            }
         },
         methods: {},
         computed: {},

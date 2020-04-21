@@ -4,7 +4,50 @@ import router from './router/index'
 import store from './store/index'
 require('@assets/iconfont.js')
 Vue.config.silent = true
-
+Vue.config.performance = true
+Vue.config.keyCodes = {
+    v: 86,
+    f1: 112,
+    // camelCase 不可用
+    mediaPlayPause: 13 ,
+    // 取而代之的是 kebab-case 且用双引号括起来
+    "media-play-pause": 13 ,
+    up: [38, 87]
+}
+Vue.directive('my-directive', {
+    bind: function (el,binding) {
+      console.log(el)
+      console.log(binding)
+      console.log('bind')
+        // el.style.background = 'red'
+    },
+    inserted: function (el,binding) {
+        console.log(el)
+        console.log(binding)
+        console.log('inserted')
+        el.focus()
+        el.style.background = 'red'
+    },
+    update: function (el,binding) {
+        console.log('update')
+        console.log(el)
+        console.log(binding)
+    },
+    componentUpdated: function (el,binding) {
+        console.log('componentUpdated')
+        console.log(el)
+        console.log(binding)
+    },
+    unbind: function (el,binding) {
+        console.log('unbind')
+        console.log(el)
+        console.log(binding)
+    }
+})
+Vue.filter('myFilter', function (value) {
+    let value1 = value.slice(1,2)
+    return value1
+})
 /* 安装finsuit插件包 */
 import finsuit from "@common/finsuit-h5"
 Vue.use(finsuit);
@@ -37,6 +80,7 @@ Vue.use(SMEditor)
 Vue.config.productionTip = false
 
 const app = new Vue({
+  // el:'#app',
   router,
   store,
   data:{
@@ -47,6 +91,8 @@ const app = new Vue({
       alert('1')
     }
   },
+  // components: {App},
+  // template: `<App/>`,
   render: h => h(App)
 })
 

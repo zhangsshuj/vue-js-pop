@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="it in hh">
-            <slot name="one">{{$root.foo}}</slot>
+            <slot name="one">{{user.a}}</slot>
         </div>
     </div>
 </template>
@@ -12,7 +12,8 @@
         data() {
             return {
                 one: '123',
-                b: 3
+                b: 3,
+                user:{a:'a',b:'b'}
             }
         },
         methods: {},
