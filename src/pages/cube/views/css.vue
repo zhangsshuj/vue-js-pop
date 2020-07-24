@@ -11,6 +11,7 @@
                 {{ slotProps.user.lastName }}
             </template>
         </css4>
+        <button @click="goHref">h5跳转小程序</button>
     </div>
 </template>
 <script>
@@ -31,6 +32,10 @@
             }
         },
         methods: {
+            goHref() {
+                console.log(wx)
+                wx.miniProgram.navigateTo({url: '/pages/index/main'})
+            },
             aaFn() {
                 this.aa = 4561
             },

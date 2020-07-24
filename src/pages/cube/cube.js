@@ -2,6 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
+import * as fundebug from "fundebug-javascript";
+import fundebugVue from "fundebug-vue";
+fundebug.apikey = "ad28d919b07fca6669afbe5f29048ceb583bb013ab32217eb8be7d3ba94214f8"
+fundebug.setHttpBody = true;
+fundebug.silentVideo = true;
+fundebugVue(fundebug, Vue);
+// fundebug.test()
+require('fundebug-revideo');
 require('@assets/iconfont.js')
 Vue.config.silent = true
 Vue.config.performance = true
@@ -52,6 +60,10 @@ Vue.filter('myFilter', function (value) {
 import finsuit from "@common/finsuit-h5"
 Vue.use(finsuit);
 
+/* 引入 axios */
+import axios from "@common/finsuit-http"
+Vue.prototype.$axios = axios;
+
 import localStore from "./utils/localStore.js"
 import storageCross from "./utils/storageCross.js"
 Vue.prototype["$localStore"] = localStore;
@@ -68,6 +80,13 @@ Vue.use(Confirm);
 /* 注册配置文件 */
 import config from "./config/config.index.js"
 Vue.prototype["$Config"] = config;
+
+// 引入vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+import { List } from 'vant';
+Vue.use(List);
+Vue.use(Vant);
 
 /* 创建分享图片 */
 import createShareImage from "./utils/createShareImage.js"
