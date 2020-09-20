@@ -52,15 +52,15 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "vs" */ '../views/css.vue')
     },
-    {
-      path: '/render',
-      name: 'render',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "render" */ '../views/render.vue')
-  },
   {
+    path: '/render',
+    name: 'render',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "render" */ '../views/render.vue')
+},
+{
     path: '/list',
     name: 'list',
     // route level code-splitting
