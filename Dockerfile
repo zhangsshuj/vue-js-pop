@@ -1,5 +1,5 @@
 # 使用14.9.0的版本作为基础镜像
-FROM node:14.9.0
+FROM node:6.10.3-slim
 
 # 安装nginx
 RUN apt-get update \
