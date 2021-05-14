@@ -13,6 +13,7 @@ const CONFIG = {
         actityCode: "ANSWER_ACTIVITY",
         // api host
         baseUrlHost: "https://app-test4.bicai365.com",
+        // baseUrlHost: "https://yiye-gateway.bicai365.com",
         // baseUrlHost: "http://192.168.5.22:8080",
         // baseUrlHost: "http://192.168.100.249:8989",
         // baseUrlHost: "http://easy-mock.liuup.com/mock/5d352de7d360c27a130ae973/oneTopic",

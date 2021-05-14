@@ -6,16 +6,16 @@
       <img @click="playBackFn" class="huikan" :src="$assets.mainhuikan">
     </div>
     <div class="bj middle" :style="{backgroundImage:`url(${$assets.mainjianbian})`}">
-      <div class="btn btn1" @click="$checkLogin({action:goUrl,data:'nps'})">新人福利介绍</div>
+      <!--<div class="btn btn1" @click="$checkLogin({action:goUrl,data:'nps'})">新人福利介绍</div>-->
       <div class="btn btn2" @click="goUrl('nay')">拼团介绍</div>
       <div class="btn btn3" @click="goUrl('ddf')">单单返活动介绍</div>
     </div>
-    <div class="bj bot" :style="{backgroundImage:`url(${$assets.mainbotbj})`}">
-      <div class="btn">
-        <img @click="actionFn('yq')" class="btn1" v-show="$store.state.APP_FLAG === 'PC' || $store.state.APP_FLAG === 'BC'" :src="$assets.mainbtn1">
-        <img @click="actionFn('cy')" class="btn2" :src="$assets.mainbtn2">
-      </div>
-    </div>
+    <!--<div class="bj bot" :style="{backgroundImage:`url(${$assets.mainbotbj})`}">-->
+      <!--<div class="btn">-->
+        <!--&lt;!&ndash;<img @click="actionFn('yq')" class="btn1" v-show="$store.state.APP_FLAG === 'PC' || $store.state.APP_FLAG === 'BC'" :src="$assets.mainbtn1">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img @click="actionFn('cy')" class="btn2" :src="$assets.mainbtn2">&ndash;&gt;-->
+      <!--</div>-->
+    <!--</div>-->
   </section>
 </template>
 

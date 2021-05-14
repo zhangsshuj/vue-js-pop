@@ -16,6 +16,27 @@ export default new Router({
           // redirect: "/",
         },
         {
+            name: 'ProductList',
+            path: '/ProductList',
+            component: require('../view/main').default,
+            meta: { title: '攻略', requiresAuth: false, keepAlive: true },
+            // redirect: "/",
+        },
+        {
+            name: 'BankAccount',
+            path: '/BankAccount',
+            component: require('../view/main').default,
+            meta: { title: '攻略', requiresAuth: false, keepAlive: true },
+            // redirect: "/",
+        },
+        {
+            name: 'ProdctionDetail',
+            path: '/ProdctionDetail',
+            component: require('../view/ddf').default,
+            meta: { title: '单单返介绍', requiresAuth: false, keepAlive: true },
+            // redirect: "/",
+        },
+        {
           name: 'ddf',
           path: '/ddf',
           component: require('../view/ddf').default,

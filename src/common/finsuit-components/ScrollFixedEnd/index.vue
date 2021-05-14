@@ -21,8 +21,12 @@ export default {
       t2: 0,
       timer: null
     };
+  }, 
+  created() {
+    console.log('z-1')
   },
   mounted () {
+    console.log('z-2')
     window.addEventListener("scroll", this.init);
   },
   activated () {
@@ -47,6 +51,7 @@ export default {
     // window.removeEventListener("scroll", this.init);
   },
   destroyed () {
+    console.log('z-3')
     // window.removeEventListener("scroll", this.init);
   }
 }

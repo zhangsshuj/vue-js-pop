@@ -2,6 +2,7 @@
   <div class="about" v-scroll>
     <ScrollFixedEnd @scrollEnd="isHidden = false" @scroll="isHidden= true">
       <div id="imgShare1">
+        <a href="http://www.baidu.com" v-on:click.self.prevent="console(1)">test</a>
         <a href="javascript:void(0);" class="share-btn" :class="{'animeta-hidden':isHidden}" @click="shareFn"></a>
         <div class="ui">
           <h1>组件调用<<>>BUTTON</h1>
@@ -358,7 +359,11 @@
               feed: state => state.feedback.quesData
           })
       },
+      created() {
+        console.log('f-1')
+      },
       mounted() {
+        console.log('f-2')
           this.cross = null
           this.cross = new this.$storageCross({})
           this.sendQuesData([{a:1,b:2}]).then(() => {
@@ -385,6 +390,7 @@
           }
       },
       destroyed(){
+        console.log('f-3')
           window.removeEventListener('popstate', this.cancel, false);
       },
       methods: {
