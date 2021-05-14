@@ -2,7 +2,7 @@
 FROM node:14.9.0
 
 # 安装nginx
-RUN apt-get update \    && apt-get install -y nginx
+RUN apt-get install -y nginx
 
 # 指定工作目录
 WORKDIR /app
@@ -19,9 +19,9 @@ EXPOSE 80
 # 4、删除工作目录的文件，尤其是 node_modules 以减小镜像的体积
 # 由于镜像构建的每一步都会产生新层
 # 为了减小镜像体积，尽可能将一些同类操作，集成到一个步骤中，如下
-RUN  npm install \
-    && npm run build \
-    && cp -r dist/* /var/www/html \
+RUN  npm install
+    && npm run build
+    && cp -r dist/* /var/www/html
     && rm -rf /app
 
 # 以前台方式启动 nginx
