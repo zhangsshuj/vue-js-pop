@@ -25,7 +25,7 @@ RUN  npm install \
     && cp -r dist/dev/mainvenueh5/* /usr/share/nginx/html \
     && rm -rf /app
 
-RUN rm /etc/nginx/conf.d/default.conf
+RUN sudo rm /etc/nginx/conf.d/default.conf
 
 ADD default.conf /etc/nginx/conf.d/
 
