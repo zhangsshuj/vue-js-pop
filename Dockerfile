@@ -25,8 +25,9 @@ RUN  npm install \
     && cp -r dist/dev/mainvenueh5/* /usr/share/nginx/html \
     && rm -rf /app
 
-# RUN rm /etc/nginx/conf.d/default.conf
-# ADD default.conf /etc/nginx/conf.d/
+RUN rm /etc/nginx/conf.d/default.conf
+
+ADD default.conf /etc/nginx/conf.d/
 
 # 以前台方式启动 nginx
 CMD ["nginx","-g","daemon off;"]
