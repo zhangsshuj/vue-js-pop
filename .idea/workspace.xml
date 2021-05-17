@@ -67,8 +67,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="95">
+              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -466,7 +466,7 @@
       <workItem from="1617292100903" duration="341000" />
       <workItem from="1620958727485" duration="390000" />
       <workItem from="1620969537378" duration="7832000" />
-      <workItem from="1621221234573" duration="863000" />
+      <workItem from="1621221234573" duration="1342000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1575367472587</created>
@@ -573,11 +573,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621232257434</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="docker 5">
+      <created>1621232400061</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621232400061</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619670000" />
+    <option name="totallyTimeSpent" value="620149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1395" height="875" extended-state="6" />
@@ -1017,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="95">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding />
         </state>
       </provider>
