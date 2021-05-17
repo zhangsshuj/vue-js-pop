@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6598193a-c415-43fd-a1f7-19ac52287cf6" name="Default" comment="">
+    <list default="true" id="6598193a-c415-43fd-a1f7-19ac52287cf6" name="Default" comment="docker 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +66,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="330">
+              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -466,7 +465,7 @@
       <workItem from="1617292100903" duration="341000" />
       <workItem from="1620958727485" duration="390000" />
       <workItem from="1620969537378" duration="7832000" />
-      <workItem from="1621221234573" duration="1342000" />
+      <workItem from="1621221234573" duration="1481000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1575367472587</created>
@@ -580,11 +579,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621232400061</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="docker 5">
+      <created>1621233045719</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621233045719</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620149000" />
+    <option name="totallyTimeSpent" value="620288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1395" height="875" extended-state="6" />
@@ -1024,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
