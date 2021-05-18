@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6214e60f-b2c4-4780-9897-42203eee0650" name="Default" comment="">
+    <list default="true" id="6214e60f-b2c4-4780-9897-42203eee0650" name="Default" comment="docker 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
     </list>
@@ -23,8 +23,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="456">
+              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -171,6 +171,17 @@
               <item name="vue-js-pop" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vue-js-pop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-js-pop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js-pop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -208,7 +219,7 @@
       <updated>1621260810292</updated>
       <workItem from="1621260814057" duration="2761000" />
       <workItem from="1621264004403" duration="685000" />
-      <workItem from="1621300932220" duration="11000" />
+      <workItem from="1621300932220" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="docker 1">
       <created>1621261762810</created>
@@ -245,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621264164089</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docker 1">
+      <created>1621300952974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621300952974</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4935000" />
+    <option name="totallyTimeSpent" value="9964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1395" height="875" extended-state="0" />
@@ -672,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="456">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding />
         </state>
       </provider>
